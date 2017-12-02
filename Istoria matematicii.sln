@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2006
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Istoria matematicii", "Istoria matematicii\Istoria matematicii.csproj", "{BCDF4C85-FF6E-4E1E-95C8-22A15B6B6BE1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BCDF4C85-FF6E-4E1E-95C8-22A15B6B6BE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCDF4C85-FF6E-4E1E-95C8-22A15B6B6BE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCDF4C85-FF6E-4E1E-95C8-22A15B6B6BE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCDF4C85-FF6E-4E1E-95C8-22A15B6B6BE1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {64471CD1-BADB-44F1-AE6D-C459E6BE7E7F}
+	EndGlobalSection
+EndGlobal
