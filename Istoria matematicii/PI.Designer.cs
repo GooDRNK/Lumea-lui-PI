@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PI));
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.iTalk_ThemeContainer1 = new iTalk.iTalk_ThemeContainer();
             this.iTalk_TabControl1 = new iTalk.iTalk_TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -155,13 +156,21 @@
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.intrebare1 = new iTalk.iTalk_HeaderLabel();
             this.tabPage13 = new System.Windows.Forms.TabPage();
+            this.iTalk_HeaderLabel46 = new iTalk.iTalk_HeaderLabel();
+            this.iTalk_HeaderLabel47 = new iTalk.iTalk_HeaderLabel();
+            this.iTalk_HeaderLabel45 = new iTalk.iTalk_HeaderLabel();
+            this.iTalk_HeaderLabel44 = new iTalk.iTalk_HeaderLabel();
+            this.iTalk_HeaderLabel43 = new iTalk.iTalk_HeaderLabel();
+            this.iTalk_HeaderLabel42 = new iTalk.iTalk_HeaderLabel();
+            this.iTalk_HeaderLabel41 = new iTalk.iTalk_HeaderLabel();
+            this.iTalk_HeaderLabel40 = new iTalk.iTalk_HeaderLabel();
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
             this.iTalk_ControlBox1 = new iTalk.iTalk_ControlBox();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.iTalk_HeaderLabel40 = new iTalk.iTalk_HeaderLabel();
-            this.iTalk_HeaderLabel41 = new iTalk.iTalk_HeaderLabel();
-            this.iTalk_HeaderLabel42 = new iTalk.iTalk_HeaderLabel();
-            this.iTalk_HeaderLabel43 = new iTalk.iTalk_HeaderLabel();
+            this.iTalk_Separator1 = new iTalk.iTalk_Separator();
+            this.iTalk_Separator2 = new iTalk.iTalk_Separator();
+            this.iTalk_Separator3 = new iTalk.iTalk_Separator();
+            this.iTalk_Separator4 = new iTalk.iTalk_Separator();
+            this.iTalk_Separator5 = new iTalk.iTalk_Separator();
             this.iTalk_ThemeContainer1.SuspendLayout();
             this.iTalk_TabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -199,6 +208,10 @@
             // timer1
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // backgroundWorker1
+            // 
+            this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
             // 
             // iTalk_ThemeContainer1
             // 
@@ -1059,9 +1072,9 @@
             this.iTalk_ChatBubble_L2.Name = "iTalk_ChatBubble_L2";
             this.iTalk_ChatBubble_L2.Size = new System.Drawing.Size(207, 129);
             this.iTalk_ChatBubble_L2.TabIndex = 3;
-            this.iTalk_ChatBubble_L2.Text = "În urma cercului rezultat programul iți va afisa restul dimensiunilor pentru dime" +
-    "nsiunea introdusă de tine. Respectivele dimensiuni au fost folosite pentru a rea" +
-    "liza cercul dorit.";
+            this.iTalk_ChatBubble_L2.Text = "În urma cercului rezultat programul iți va afisa restul mărimilor pentru dimensiu" +
+    "nea introdusă de tine. Respectivele mărimi au fost folosite pentru a realiza cer" +
+    "cul dorit.";
             // 
             // iTalk_ChatBubble_R1
             // 
@@ -1269,9 +1282,9 @@
             this.iTalk_Button_23.ForeColor = System.Drawing.Color.White;
             this.iTalk_Button_23.Image = null;
             this.iTalk_Button_23.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iTalk_Button_23.Location = new System.Drawing.Point(406, 630);
+            this.iTalk_Button_23.Location = new System.Drawing.Point(897, 3);
             this.iTalk_Button_23.Name = "iTalk_Button_23";
-            this.iTalk_Button_23.Size = new System.Drawing.Size(99, 19);
+            this.iTalk_Button_23.Size = new System.Drawing.Size(56, 19);
             this.iTalk_Button_23.TabIndex = 40;
             this.iTalk_Button_23.Text = "Send";
             this.iTalk_Button_23.TextAlignment = System.Drawing.StringAlignment.Center;
@@ -1318,9 +1331,8 @@
             this.intrebare10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
             this.intrebare10.Location = new System.Drawing.Point(507, 44);
             this.intrebare10.Name = "intrebare10";
-            this.intrebare10.Size = new System.Drawing.Size(77, 19);
+            this.intrebare10.Size = new System.Drawing.Size(0, 19);
             this.intrebare10.TabIndex = 36;
-            this.intrebare10.Text = "Intrebare 1";
             // 
             // checkBox19
             // 
@@ -1363,9 +1375,8 @@
             this.intrebare8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
             this.intrebare8.Location = new System.Drawing.Point(507, 285);
             this.intrebare8.Name = "intrebare8";
-            this.intrebare8.Size = new System.Drawing.Size(77, 19);
+            this.intrebare8.Size = new System.Drawing.Size(0, 19);
             this.intrebare8.TabIndex = 32;
-            this.intrebare8.Text = "Intrebare 1";
             // 
             // checkBox22
             // 
@@ -1408,9 +1419,8 @@
             this.intrebare6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
             this.intrebare6.Location = new System.Drawing.Point(507, 547);
             this.intrebare6.Name = "intrebare6";
-            this.intrebare6.Size = new System.Drawing.Size(77, 19);
+            this.intrebare6.Size = new System.Drawing.Size(0, 19);
             this.intrebare6.TabIndex = 28;
-            this.intrebare6.Text = "Intrebare 1";
             // 
             // checkBox25
             // 
@@ -1453,9 +1463,8 @@
             this.intrebare4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
             this.intrebare4.Location = new System.Drawing.Point(4, 422);
             this.intrebare4.Name = "intrebare4";
-            this.intrebare4.Size = new System.Drawing.Size(77, 19);
+            this.intrebare4.Size = new System.Drawing.Size(0, 19);
             this.intrebare4.TabIndex = 24;
-            this.intrebare4.Text = "Intrebare 1";
             // 
             // checkBox28
             // 
@@ -1498,9 +1507,8 @@
             this.intrebare2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
             this.intrebare2.Location = new System.Drawing.Point(4, 163);
             this.intrebare2.Name = "intrebare2";
-            this.intrebare2.Size = new System.Drawing.Size(77, 19);
+            this.intrebare2.Size = new System.Drawing.Size(0, 19);
             this.intrebare2.TabIndex = 20;
-            this.intrebare2.Text = "Intrebare 2";
             // 
             // checkBox13
             // 
@@ -1543,9 +1551,8 @@
             this.intrebare9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
             this.intrebare9.Location = new System.Drawing.Point(507, 163);
             this.intrebare9.Name = "intrebare9";
-            this.intrebare9.Size = new System.Drawing.Size(77, 19);
+            this.intrebare9.Size = new System.Drawing.Size(0, 19);
             this.intrebare9.TabIndex = 16;
-            this.intrebare9.Text = "Intrebare 1";
             // 
             // checkBox10
             // 
@@ -1588,9 +1595,8 @@
             this.intrebare7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
             this.intrebare7.Location = new System.Drawing.Point(507, 422);
             this.intrebare7.Name = "intrebare7";
-            this.intrebare7.Size = new System.Drawing.Size(77, 19);
+            this.intrebare7.Size = new System.Drawing.Size(0, 19);
             this.intrebare7.TabIndex = 12;
-            this.intrebare7.Text = "Intrebare 1";
             // 
             // checkBox7
             // 
@@ -1633,9 +1639,8 @@
             this.intrebare5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
             this.intrebare5.Location = new System.Drawing.Point(4, 547);
             this.intrebare5.Name = "intrebare5";
-            this.intrebare5.Size = new System.Drawing.Size(77, 19);
+            this.intrebare5.Size = new System.Drawing.Size(0, 19);
             this.intrebare5.TabIndex = 8;
-            this.intrebare5.Text = "Intrebare 1";
             // 
             // checkBox4
             // 
@@ -1678,9 +1683,8 @@
             this.intrebare3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
             this.intrebare3.Location = new System.Drawing.Point(4, 285);
             this.intrebare3.Name = "intrebare3";
-            this.intrebare3.Size = new System.Drawing.Size(77, 19);
+            this.intrebare3.Size = new System.Drawing.Size(0, 19);
             this.intrebare3.TabIndex = 4;
-            this.intrebare3.Text = "Intrebare 1";
             // 
             // checkBox3
             // 
@@ -1723,24 +1727,132 @@
             this.intrebare1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
             this.intrebare1.Location = new System.Drawing.Point(4, 44);
             this.intrebare1.Name = "intrebare1";
-            this.intrebare1.Size = new System.Drawing.Size(73, 19);
+            this.intrebare1.Size = new System.Drawing.Size(0, 19);
             this.intrebare1.TabIndex = 0;
-            this.intrebare1.Text = "Intrebare1";
             // 
             // tabPage13
             // 
             this.tabPage13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
+            this.tabPage13.Controls.Add(this.iTalk_Separator5);
+            this.tabPage13.Controls.Add(this.iTalk_Separator4);
+            this.tabPage13.Controls.Add(this.iTalk_Separator3);
+            this.tabPage13.Controls.Add(this.iTalk_Separator2);
+            this.tabPage13.Controls.Add(this.iTalk_Separator1);
+            this.tabPage13.Controls.Add(this.iTalk_HeaderLabel46);
+            this.tabPage13.Controls.Add(this.iTalk_HeaderLabel47);
+            this.tabPage13.Controls.Add(this.iTalk_HeaderLabel45);
+            this.tabPage13.Controls.Add(this.iTalk_HeaderLabel44);
             this.tabPage13.Controls.Add(this.iTalk_HeaderLabel43);
             this.tabPage13.Controls.Add(this.iTalk_HeaderLabel42);
             this.tabPage13.Controls.Add(this.iTalk_HeaderLabel41);
             this.tabPage13.Controls.Add(this.iTalk_HeaderLabel40);
             this.tabPage13.Controls.Add(this.pictureBox15);
+            this.tabPage13.Cursor = System.Windows.Forms.Cursors.Default;
             this.tabPage13.Location = new System.Drawing.Point(139, 4);
             this.tabPage13.Name = "tabPage13";
             this.tabPage13.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage13.Size = new System.Drawing.Size(1013, 670);
             this.tabPage13.TabIndex = 12;
             this.tabPage13.Text = "About";
+            // 
+            // iTalk_HeaderLabel46
+            // 
+            this.iTalk_HeaderLabel46.AutoSize = true;
+            this.iTalk_HeaderLabel46.BackColor = System.Drawing.Color.Transparent;
+            this.iTalk_HeaderLabel46.Cursor = System.Windows.Forms.Cursors.AppStarting;
+            this.iTalk_HeaderLabel46.Font = new System.Drawing.Font("Segoe UI", 24.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iTalk_HeaderLabel46.ForeColor = System.Drawing.Color.SteelBlue;
+            this.iTalk_HeaderLabel46.Location = new System.Drawing.Point(172, 412);
+            this.iTalk_HeaderLabel46.Name = "iTalk_HeaderLabel46";
+            this.iTalk_HeaderLabel46.Size = new System.Drawing.Size(581, 45);
+            this.iTalk_HeaderLabel46.TabIndex = 9;
+            this.iTalk_HeaderLabel46.Text = "https://liceulteoreticioncantacuzino.ro/";
+            this.iTalk_HeaderLabel46.Click += new System.EventHandler(this.iTalk_HeaderLabel46_Click);
+            // 
+            // iTalk_HeaderLabel47
+            // 
+            this.iTalk_HeaderLabel47.AutoSize = true;
+            this.iTalk_HeaderLabel47.BackColor = System.Drawing.Color.Transparent;
+            this.iTalk_HeaderLabel47.Font = new System.Drawing.Font("Segoe UI", 25F);
+            this.iTalk_HeaderLabel47.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.iTalk_HeaderLabel47.Location = new System.Drawing.Point(18, 411);
+            this.iTalk_HeaderLabel47.Name = "iTalk_HeaderLabel47";
+            this.iTalk_HeaderLabel47.Size = new System.Drawing.Size(148, 46);
+            this.iTalk_HeaderLabel47.TabIndex = 8;
+            this.iTalk_HeaderLabel47.Text = "Website:";
+            // 
+            // iTalk_HeaderLabel45
+            // 
+            this.iTalk_HeaderLabel45.AutoSize = true;
+            this.iTalk_HeaderLabel45.BackColor = System.Drawing.Color.Transparent;
+            this.iTalk_HeaderLabel45.Cursor = System.Windows.Forms.Cursors.AppStarting;
+            this.iTalk_HeaderLabel45.Font = new System.Drawing.Font("Segoe UI", 24.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iTalk_HeaderLabel45.ForeColor = System.Drawing.Color.SteelBlue;
+            this.iTalk_HeaderLabel45.Location = new System.Drawing.Point(172, 317);
+            this.iTalk_HeaderLabel45.Name = "iTalk_HeaderLabel45";
+            this.iTalk_HeaderLabel45.Size = new System.Drawing.Size(650, 45);
+            this.iTalk_HeaderLabel45.TabIndex = 7;
+            this.iTalk_HeaderLabel45.Text = "https://github.com/GooDRNK/Lumea-lui-PI";
+            this.iTalk_HeaderLabel45.Click += new System.EventHandler(this.iTalk_HeaderLabel45_Click);
+            // 
+            // iTalk_HeaderLabel44
+            // 
+            this.iTalk_HeaderLabel44.AutoSize = true;
+            this.iTalk_HeaderLabel44.BackColor = System.Drawing.Color.Transparent;
+            this.iTalk_HeaderLabel44.Font = new System.Drawing.Font("Segoe UI", 25F);
+            this.iTalk_HeaderLabel44.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.iTalk_HeaderLabel44.Location = new System.Drawing.Point(18, 317);
+            this.iTalk_HeaderLabel44.Name = "iTalk_HeaderLabel44";
+            this.iTalk_HeaderLabel44.Size = new System.Drawing.Size(133, 46);
+            this.iTalk_HeaderLabel44.TabIndex = 6;
+            this.iTalk_HeaderLabel44.Text = "GitHub:";
+            // 
+            // iTalk_HeaderLabel43
+            // 
+            this.iTalk_HeaderLabel43.AutoSize = true;
+            this.iTalk_HeaderLabel43.BackColor = System.Drawing.Color.Transparent;
+            this.iTalk_HeaderLabel43.Font = new System.Drawing.Font("Segoe UI", 25F);
+            this.iTalk_HeaderLabel43.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.iTalk_HeaderLabel43.Location = new System.Drawing.Point(18, 225);
+            this.iTalk_HeaderLabel43.Name = "iTalk_HeaderLabel43";
+            this.iTalk_HeaderLabel43.Size = new System.Drawing.Size(849, 46);
+            this.iTalk_HeaderLabel43.TabIndex = 4;
+            this.iTalk_HeaderLabel43.Text = "Profesori: Enescu Cătalina (INFO) / Tănasie Elena (MATE)";
+            // 
+            // iTalk_HeaderLabel42
+            // 
+            this.iTalk_HeaderLabel42.AutoSize = true;
+            this.iTalk_HeaderLabel42.BackColor = System.Drawing.Color.Transparent;
+            this.iTalk_HeaderLabel42.Font = new System.Drawing.Font("Segoe UI", 25F);
+            this.iTalk_HeaderLabel42.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.iTalk_HeaderLabel42.Location = new System.Drawing.Point(18, 108);
+            this.iTalk_HeaderLabel42.Name = "iTalk_HeaderLabel42";
+            this.iTalk_HeaderLabel42.Size = new System.Drawing.Size(0, 46);
+            this.iTalk_HeaderLabel42.TabIndex = 3;
+            // 
+            // iTalk_HeaderLabel41
+            // 
+            this.iTalk_HeaderLabel41.AutoSize = true;
+            this.iTalk_HeaderLabel41.BackColor = System.Drawing.Color.Transparent;
+            this.iTalk_HeaderLabel41.Font = new System.Drawing.Font("Segoe UI", 25F);
+            this.iTalk_HeaderLabel41.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.iTalk_HeaderLabel41.Location = new System.Drawing.Point(18, 137);
+            this.iTalk_HeaderLabel41.Name = "iTalk_HeaderLabel41";
+            this.iTalk_HeaderLabel41.Size = new System.Drawing.Size(668, 46);
+            this.iTalk_HeaderLabel41.TabIndex = 2;
+            this.iTalk_HeaderLabel41.Text = "Clasa: a X-a, Liceul Teoretic Ion Cantacuzino";
+            // 
+            // iTalk_HeaderLabel40
+            // 
+            this.iTalk_HeaderLabel40.AutoSize = true;
+            this.iTalk_HeaderLabel40.BackColor = System.Drawing.Color.Transparent;
+            this.iTalk_HeaderLabel40.Font = new System.Drawing.Font("Segoe UI", 25F);
+            this.iTalk_HeaderLabel40.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.iTalk_HeaderLabel40.Location = new System.Drawing.Point(18, 47);
+            this.iTalk_HeaderLabel40.Name = "iTalk_HeaderLabel40";
+            this.iTalk_HeaderLabel40.Size = new System.Drawing.Size(478, 46);
+            this.iTalk_HeaderLabel40.TabIndex = 1;
+            this.iTalk_HeaderLabel40.Text = "Realizator: Eremia Mihai Daniel";
             // 
             // pictureBox15
             // 
@@ -1762,57 +1874,45 @@
             this.iTalk_ControlBox1.TabIndex = 1;
             this.iTalk_ControlBox1.Text = "iTalk_ControlBox1";
             // 
-            // backgroundWorker1
+            // iTalk_Separator1
             // 
-            this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
+            this.iTalk_Separator1.Location = new System.Drawing.Point(26, 96);
+            this.iTalk_Separator1.Name = "iTalk_Separator1";
+            this.iTalk_Separator1.Size = new System.Drawing.Size(835, 13);
+            this.iTalk_Separator1.TabIndex = 10;
+            this.iTalk_Separator1.Text = "iTalk_Separator1";
             // 
-            // iTalk_HeaderLabel40
+            // iTalk_Separator2
             // 
-            this.iTalk_HeaderLabel40.AutoSize = true;
-            this.iTalk_HeaderLabel40.BackColor = System.Drawing.Color.Transparent;
-            this.iTalk_HeaderLabel40.Font = new System.Drawing.Font("Segoe UI", 25F);
-            this.iTalk_HeaderLabel40.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.iTalk_HeaderLabel40.Location = new System.Drawing.Point(18, 16);
-            this.iTalk_HeaderLabel40.Name = "iTalk_HeaderLabel40";
-            this.iTalk_HeaderLabel40.Size = new System.Drawing.Size(478, 46);
-            this.iTalk_HeaderLabel40.TabIndex = 1;
-            this.iTalk_HeaderLabel40.Text = "Realizator: Eremia Mihai Daniel";
+            this.iTalk_Separator2.Location = new System.Drawing.Point(26, 186);
+            this.iTalk_Separator2.Name = "iTalk_Separator2";
+            this.iTalk_Separator2.Size = new System.Drawing.Size(835, 13);
+            this.iTalk_Separator2.TabIndex = 11;
+            this.iTalk_Separator2.Text = "iTalk_Separator2";
             // 
-            // iTalk_HeaderLabel41
+            // iTalk_Separator3
             // 
-            this.iTalk_HeaderLabel41.AutoSize = true;
-            this.iTalk_HeaderLabel41.BackColor = System.Drawing.Color.Transparent;
-            this.iTalk_HeaderLabel41.Font = new System.Drawing.Font("Segoe UI", 25F);
-            this.iTalk_HeaderLabel41.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.iTalk_HeaderLabel41.Location = new System.Drawing.Point(18, 62);
-            this.iTalk_HeaderLabel41.Name = "iTalk_HeaderLabel41";
-            this.iTalk_HeaderLabel41.Size = new System.Drawing.Size(190, 46);
-            this.iTalk_HeaderLabel41.TabIndex = 2;
-            this.iTalk_HeaderLabel41.Text = "Clasa: a X-a";
+            this.iTalk_Separator3.Location = new System.Drawing.Point(26, 274);
+            this.iTalk_Separator3.Name = "iTalk_Separator3";
+            this.iTalk_Separator3.Size = new System.Drawing.Size(841, 13);
+            this.iTalk_Separator3.TabIndex = 12;
+            this.iTalk_Separator3.Text = "iTalk_Separator3";
             // 
-            // iTalk_HeaderLabel42
+            // iTalk_Separator4
             // 
-            this.iTalk_HeaderLabel42.AutoSize = true;
-            this.iTalk_HeaderLabel42.BackColor = System.Drawing.Color.Transparent;
-            this.iTalk_HeaderLabel42.Font = new System.Drawing.Font("Segoe UI", 25F);
-            this.iTalk_HeaderLabel42.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.iTalk_HeaderLabel42.Location = new System.Drawing.Point(18, 108);
-            this.iTalk_HeaderLabel42.Name = "iTalk_HeaderLabel42";
-            this.iTalk_HeaderLabel42.Size = new System.Drawing.Size(583, 46);
-            this.iTalk_HeaderLabel42.TabIndex = 3;
-            this.iTalk_HeaderLabel42.Text = "Liceul: Liceul Teoretic Ion Cantacuzino";
+            this.iTalk_Separator4.Location = new System.Drawing.Point(26, 366);
+            this.iTalk_Separator4.Name = "iTalk_Separator4";
+            this.iTalk_Separator4.Size = new System.Drawing.Size(835, 13);
+            this.iTalk_Separator4.TabIndex = 13;
+            this.iTalk_Separator4.Text = "iTalk_Separator4";
             // 
-            // iTalk_HeaderLabel43
+            // iTalk_Separator5
             // 
-            this.iTalk_HeaderLabel43.AutoSize = true;
-            this.iTalk_HeaderLabel43.BackColor = System.Drawing.Color.Transparent;
-            this.iTalk_HeaderLabel43.Font = new System.Drawing.Font("Segoe UI", 25F);
-            this.iTalk_HeaderLabel43.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.iTalk_HeaderLabel43.Location = new System.Drawing.Point(18, 154);
-            this.iTalk_HeaderLabel43.Name = "iTalk_HeaderLabel43";
-            this.iTalk_HeaderLabel43.Size = new System.Drawing.Size(916, 46);
-            this.iTalk_HeaderLabel43.TabIndex = 4;
-            this.iTalk_HeaderLabel43.Text = "Coordonatori: Enescu Catalina (INFO) / Tănasie Elena (MATE)";
+            this.iTalk_Separator5.Location = new System.Drawing.Point(26, 460);
+            this.iTalk_Separator5.Name = "iTalk_Separator5";
+            this.iTalk_Separator5.Size = new System.Drawing.Size(835, 13);
+            this.iTalk_Separator5.TabIndex = 14;
+            this.iTalk_Separator5.Text = "iTalk_Separator5";
             // 
             // PI
             // 
@@ -1822,9 +1922,11 @@
             this.Controls.Add(this.iTalk_ThemeContainer1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.MinimumSize = new System.Drawing.Size(126, 39);
             this.Name = "PI";
             this.Text = "Lumea Lui PI";
+            this.TopMost = true;
             this.TransparencyKey = System.Drawing.Color.Fuchsia;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.PI_FormClosing);
             this.Load += new System.EventHandler(this.PI_Load);
@@ -2011,6 +2113,15 @@
         private iTalk.iTalk_HeaderLabel iTalk_HeaderLabel42;
         private iTalk.iTalk_HeaderLabel iTalk_HeaderLabel41;
         private iTalk.iTalk_HeaderLabel iTalk_HeaderLabel40;
+        private iTalk.iTalk_HeaderLabel iTalk_HeaderLabel45;
+        private iTalk.iTalk_HeaderLabel iTalk_HeaderLabel44;
+        private iTalk.iTalk_HeaderLabel iTalk_HeaderLabel46;
+        private iTalk.iTalk_HeaderLabel iTalk_HeaderLabel47;
+        private iTalk.iTalk_Separator iTalk_Separator5;
+        private iTalk.iTalk_Separator iTalk_Separator4;
+        private iTalk.iTalk_Separator iTalk_Separator3;
+        private iTalk.iTalk_Separator iTalk_Separator2;
+        private iTalk.iTalk_Separator iTalk_Separator1;
     }
 }
 

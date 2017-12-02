@@ -190,9 +190,21 @@ namespace Istoria_matematicii
         //Draw Circle
         public void DrawCircle(Graphics g, Pen pen, double centerX, double centerY, double radius)
         {       
-            g.Clear(Color.GreenYellow);
+            g.Clear(Color.LightCyan);
             g.DrawEllipse(pen, (float)(centerX - radius), (float)(centerY - radius), (float)(radius + radius), (float)(radius + radius));
             Brush aBrush = (Brush)Brushes.Red;
+            
+            const double angleOfLineInDegrees = 360;
+            const double angleOfLineInRadians = (angleOfLineInDegrees / 180) * Math.PI;
+
+         
+            var cirleCenter = new PointF(((float)Width / 2), ((float)Height / 2));
+
+            var lineVector = new PointF((float)Math.Cos(angleOfLineInRadians) * (float)radius, (float)Math.Sin(angleOfLineInRadians) * (float)radius);
+
+            var lineEndPoint = new PointF((float)centerX + lineVector.X, (float)centerY + lineVector.Y);
+            Pen pens = new Pen(Color.Green, 5);
+            g.DrawLine(pens, (float)centerX, (float)centerY, lineEndPoint.X,lineEndPoint.Y);
             g.FillRectangle(aBrush, (float)centerX, (float)centerY, 4, 4);
             g.Dispose();
         }
@@ -416,127 +428,127 @@ namespace Istoria_matematicii
             intrebare1.Invoke((MethodInvoker)delegate {
                 intrebare1.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/1");
             });
-            Thread.Sleep(100);
+            Thread.Sleep(10);
             intrebare2.Invoke((MethodInvoker)delegate {
                 intrebare2.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/2");
             });
-            Thread.Sleep(100);
+            Thread.Sleep(10);
             intrebare3.Invoke((MethodInvoker)delegate {
                 intrebare3.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/3");
-            }); Thread.Sleep(100);
+            }); Thread.Sleep(10);
             intrebare4.Invoke((MethodInvoker)delegate {
                 intrebare4.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/4");
-            }); Thread.Sleep(100);
+            }); Thread.Sleep(10);
             intrebare5.Invoke((MethodInvoker)delegate {
                 intrebare5.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/5");
-            }); Thread.Sleep(100);
+            }); Thread.Sleep(10);
             intrebare6.Invoke((MethodInvoker)delegate {
                 intrebare6.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/6");
-            }); Thread.Sleep(100);
+            }); Thread.Sleep(10);
             intrebare7.Invoke((MethodInvoker)delegate {
                 intrebare7.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/7");
-            }); Thread.Sleep(100);
+            }); Thread.Sleep(10);
             intrebare8.Invoke((MethodInvoker)delegate {
                 intrebare8.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/8");
-            }); Thread.Sleep(100);
+            }); Thread.Sleep(10);
             intrebare9.Invoke((MethodInvoker)delegate {
                 intrebare9.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/9");
-            }); Thread.Sleep(100);
+            }); Thread.Sleep(10);
             intrebare10.Invoke((MethodInvoker)delegate {
                 intrebare10.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/10");
-            }); Thread.Sleep(100);
+            }); Thread.Sleep(10);
 
 
             checkBox1.Invoke((MethodInvoker)delegate {
                 checkBox1.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/1/1/");
-            }); Thread.Sleep(100);
+            }); Thread.Sleep(10);
             checkBox2.Invoke((MethodInvoker)delegate {
                 checkBox2.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/1/2/");
-            }); Thread.Sleep(100);
+            }); Thread.Sleep(10);
             checkBox3.Invoke((MethodInvoker)delegate {
                 checkBox3.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/1/3/");
-            }); Thread.Sleep(100);
+            }); Thread.Sleep(10);
             checkBox4.Invoke((MethodInvoker)delegate {
                 checkBox4.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/2/1/");
-            }); Thread.Sleep(100);
+            }); Thread.Sleep(10);
             checkBox5.Invoke((MethodInvoker)delegate {
                 checkBox5.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/2/2/");
-            }); Thread.Sleep(100);
+            }); Thread.Sleep(10);
             checkBox6.Invoke((MethodInvoker)delegate {
                 checkBox6.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/2/3/");
-            }); Thread.Sleep(100);
+            }); Thread.Sleep(10);
             checkBox7.Invoke((MethodInvoker)delegate {
                 checkBox7.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/3/1/");
-            }); Thread.Sleep(100);
+            }); Thread.Sleep(10);
             checkBox8.Invoke((MethodInvoker)delegate {
                 checkBox8.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/3/2/");
-            }); Thread.Sleep(100);
+            }); Thread.Sleep(10);
             checkBox9.Invoke((MethodInvoker)delegate {
                 checkBox9.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/3/3/");
-            }); Thread.Sleep(100);
+            }); Thread.Sleep(10);
             checkBox10.Invoke((MethodInvoker)delegate {
                 checkBox10.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/4/1/");
-            }); Thread.Sleep(100);
+            }); Thread.Sleep(10);
             checkBox11.Invoke((MethodInvoker)delegate {
                 checkBox11.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/4/2/");
-            }); Thread.Sleep(100);
+            }); Thread.Sleep(10);
             checkBox12.Invoke((MethodInvoker)delegate {
                 checkBox12.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/4/3/");
-            }); Thread.Sleep(100);
+            }); Thread.Sleep(10);
             checkBox13.Invoke((MethodInvoker)delegate {
                 checkBox13.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/5/1/");
-            }); Thread.Sleep(100);
+            }); Thread.Sleep(10);
             checkBox14.Invoke((MethodInvoker)delegate {
                 checkBox14.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/5/2/");
-            }); Thread.Sleep(100);
+            }); Thread.Sleep(10);
             checkBox15.Invoke((MethodInvoker)delegate {
                 checkBox15.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/5/3/");
-            }); Thread.Sleep(100);
+            }); Thread.Sleep(10);
             checkBox16.Invoke((MethodInvoker)delegate {
                 checkBox16.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/6/1/");
-            }); Thread.Sleep(100);
+            }); Thread.Sleep(10);
             checkBox17.Invoke((MethodInvoker)delegate {
                 checkBox17.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/6/2/");
-            }); Thread.Sleep(100);
+            }); Thread.Sleep(10);
             checkBox18.Invoke((MethodInvoker)delegate {
                 checkBox18.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/6/3/");
-            }); Thread.Sleep(100);
+            }); Thread.Sleep(10);
             checkBox19.Invoke((MethodInvoker)delegate {
                 checkBox19.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/7/1/");
-            }); Thread.Sleep(100);
+            }); Thread.Sleep(10);
             checkBox20.Invoke((MethodInvoker)delegate {
                 checkBox20.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/7/2/");
-            }); Thread.Sleep(100);
+            }); Thread.Sleep(10);
             checkBox21.Invoke((MethodInvoker)delegate {
                 checkBox21.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/7/3/");
-            }); Thread.Sleep(100);
+            }); Thread.Sleep(10);
             checkBox22.Invoke((MethodInvoker)delegate {
                 checkBox22.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/8/1/");
-            }); Thread.Sleep(100);
+            }); Thread.Sleep(10);
             checkBox23.Invoke((MethodInvoker)delegate {
                 checkBox23.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/8/2/");
-            }); Thread.Sleep(100);
+            }); Thread.Sleep(10);
             checkBox24.Invoke((MethodInvoker)delegate {
                 checkBox24.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/8/3/");
-            }); Thread.Sleep(100);
+            }); Thread.Sleep(10);
             checkBox25.Invoke((MethodInvoker)delegate {
                 checkBox25.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/9/1/");
-            }); Thread.Sleep(100);
+            }); Thread.Sleep(10);
             checkBox26.Invoke((MethodInvoker)delegate {
                 checkBox26.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/9/2/");
-            }); Thread.Sleep(100);
+            }); Thread.Sleep(10);
             checkBox27.Invoke((MethodInvoker)delegate {
                 checkBox27.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/9/3/");
-            }); Thread.Sleep(100);
+            }); Thread.Sleep(10);
             checkBox28.Invoke((MethodInvoker)delegate {
                 checkBox28.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/10/1/");
             }); Thread.Sleep(100);
             checkBox29.Invoke((MethodInvoker)delegate {
                 checkBox29.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/10/2/");
-            }); Thread.Sleep(100);
+            }); Thread.Sleep(10);
             checkBox30.Invoke((MethodInvoker)delegate {
                 checkBox30.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/10/3/");
-            }); Thread.Sleep(100);
+            }); Thread.Sleep(10);
             this.Refresh();
         }
 #endregion
@@ -855,7 +867,17 @@ namespace Istoria_matematicii
             {
                 Rs6 = string.Empty;
             }
-        }   
+        }
+
+        private void iTalk_HeaderLabel45_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://github.com/GooDRNK/Lumea-lui-PI");
+        }
+
+        private void iTalk_HeaderLabel46_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://liceulteoreticioncantacuzino.ro/");
+        }
 
         private void checkBox7_CheckedChanged(object sender, EventArgs e)
         {

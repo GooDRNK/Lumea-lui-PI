@@ -120,6 +120,9 @@
   <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <metadata name="backgroundWorker1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>104, 17</value>
+  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="tabPage3.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -3754,6 +3757,9 @@
         3/P+f6igAAKT/P8An+oqRZGQMoxhhzUX+f8APv70CABPy/nR+X5Uv5/hRz/tUxAM/9k=
 </value>
   </data>
+  <data name="iTalk_ChatBubble_L1.Text" xml:space="preserve">
+    <value>Bifați metoda prin care vreți să construiți un cerc și introduceți o valoare. În funcție de valoarea introdusă la apăsarea butonului "Draw Circle", programul va desena respectivul cerc cât și centrul acestuia.</value>
+  </data>
   <data name="pictureBox5.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         /9j/4AAQSkZJRgABAQEAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERET
@@ -4238,12 +4244,6 @@
         iisjI//Z
 </value>
   </data>
-  <data name="iTalk_ChatBubble_L1.Text" xml:space="preserve">
-    <value>Bifează metoda prin care vrei sa construiesti un cerc și introdu o valoare, în funcție de valoarea introdusă la apăsarea butonului "Draw Circle" programul va desena respectivul cerc cât și centrul acestuia.</value>
-  </data>
-  <metadata name="backgroundWorker1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>104, 17</value>
-  </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>33</value>
   </metadata>
