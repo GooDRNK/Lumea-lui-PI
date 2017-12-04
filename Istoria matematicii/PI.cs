@@ -20,32 +20,6 @@ namespace Istoria_matematicii
 {
     public partial class PI : Form
     {
-
-        int SCALE = 10000;
-        int ARRINIT = 2000;
-        int ret;
-        int pi_digits(int digits)
-        {
-         
-            int carry = 0;
-            int[] arr = new int[digits + 1];
-            for (int i = 0; i <= digits; ++i)
-                arr[i] = ARRINIT;
-            for (int i = digits; i > 0; i -= 14)
-            {
-                int sum = 0;
-                for (int j = i; j > 0; --j)
-                {
-                    sum = sum * j + SCALE * arr[j];
-                    arr[j] = sum % (j * 2 - 1);
-                    sum /= j * 2 - 1;
-                }
-                Console.WriteLine(carry + sum / SCALE);
-                carry = sum % SCALE;
-            }
-            return ret;
-        }
-
         #region Variabile/Functii
         //Download String Start
         public static string reply = string.Empty;
