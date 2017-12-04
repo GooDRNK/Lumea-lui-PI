@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Istoria_matematicii;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,11 +14,38 @@ using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Newtonsoft.Json;
 
 namespace Istoria_matematicii
 {
     public partial class PI : Form
     {
+
+        int SCALE = 10000;
+        int ARRINIT = 2000;
+        int ret;
+        int pi_digits(int digits)
+        {
+         
+            int carry = 0;
+            int[] arr = new int[digits + 1];
+            for (int i = 0; i <= digits; ++i)
+                arr[i] = ARRINIT;
+            for (int i = digits; i > 0; i -= 14)
+            {
+                int sum = 0;
+                for (int j = i; j > 0; --j)
+                {
+                    sum = sum * j + SCALE * arr[j];
+                    arr[j] = sum % (j * 2 - 1);
+                    sum /= j * 2 - 1;
+                }
+                Console.WriteLine(carry + sum / SCALE);
+                carry = sum % SCALE;
+            }
+            return ret;
+        }
+
         #region Variabile/Functii
         //Download String Start
         public static string reply = string.Empty;
@@ -37,9 +65,19 @@ namespace Istoria_matematicii
         //Download String End
         string Parola; //Aici se salveaza Parola.
         string Username; //Aici se salveaza Utilizatorul.
+        public class JsonResult
+        {
+            public string User { get; set; }
+            public int Score { get; set; }
+        }
+
         public PI()
         {
             InitializeComponent();
+            var result = JsonConvert.DeserializeObject<List<JsonResult>>(DownloadString("http://optimised.biz/clasament"));
+            dataGridView1.DataSource = result;
+            timer2.Interval = 2000;
+            timer2.Start();
             timer1.Interval=1000;
             timer1.Start();
             iTalk_HeaderLabel21.Text =
@@ -278,9 +316,9 @@ namespace Istoria_matematicii
                 }
             }
             
-            if (iTalk_CheckBox4.Checked && Convert.ToDouble(textBox4.Text) <= 331662.5 && Convert.ToDouble(textBox4.Text) >= 3.14f)
+            if (iTalk_CheckBox4.Checked)
             {
-                if (textBox4.Text != string.Empty )
+                if (textBox4.Text != string.Empty && Convert.ToDouble(textBox4.Text) <= 331662.5 && Convert.ToDouble(textBox4.Text) >= 3.14f)
                 {
                     radius = (double)Math.Sqrt(Convert.ToDouble(textBox4.Text) / Math.PI);
                     diametru = radius * 2;
@@ -418,7 +456,7 @@ namespace Istoria_matematicii
             }
             else
             {
-                MessageBox.Show("Ai obtinut un punctaj de: " + DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/" + Rs1 + "/" + Rs2 + "/" + Rs3 + "/" + Rs4 + "/" + Rs5 + "/" + Rs6 + "/" + Rs7 + "/" + Rs8 + "/" + Rs9 + "/" + Rs10) + " puncte.");
+                MessageBox.Show(DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/" + Rs1 + "/" + Rs2 + "/" + Rs3 + "/" + Rs4 + "/" + Rs5 + "/" + Rs6 + "/" + Rs7 + "/" + Rs8 + "/" + Rs9 + "/" + Rs10));
             }
         }
         #endregion
@@ -894,6 +932,17 @@ namespace Istoria_matematicii
             }
         }
 
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            var result = JsonConvert.DeserializeObject<List<JsonResult>>(DownloadString("http://optimised.biz/clasament"));
+            dataGridView1.DataSource = result;
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
         private void checkBox8_CheckedChanged(object sender, EventArgs e)
         {
             if (checkBox8.Checked)
@@ -1014,6 +1063,6 @@ namespace Istoria_matematicii
                 Rs1 = string.Empty;
             }
         }
-#endregion
+        #endregion
     }
 }

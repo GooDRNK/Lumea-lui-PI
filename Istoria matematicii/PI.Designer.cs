@@ -156,6 +156,11 @@
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.intrebare1 = new iTalk.iTalk_HeaderLabel();
             this.tabPage13 = new System.Windows.Forms.TabPage();
+            this.iTalk_Separator5 = new iTalk.iTalk_Separator();
+            this.iTalk_Separator4 = new iTalk.iTalk_Separator();
+            this.iTalk_Separator3 = new iTalk.iTalk_Separator();
+            this.iTalk_Separator2 = new iTalk.iTalk_Separator();
+            this.iTalk_Separator1 = new iTalk.iTalk_Separator();
             this.iTalk_HeaderLabel46 = new iTalk.iTalk_HeaderLabel();
             this.iTalk_HeaderLabel47 = new iTalk.iTalk_HeaderLabel();
             this.iTalk_HeaderLabel45 = new iTalk.iTalk_HeaderLabel();
@@ -165,12 +170,10 @@
             this.iTalk_HeaderLabel41 = new iTalk.iTalk_HeaderLabel();
             this.iTalk_HeaderLabel40 = new iTalk.iTalk_HeaderLabel();
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
+            this.tabPage14 = new System.Windows.Forms.TabPage();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.iTalk_ControlBox1 = new iTalk.iTalk_ControlBox();
-            this.iTalk_Separator1 = new iTalk.iTalk_Separator();
-            this.iTalk_Separator2 = new iTalk.iTalk_Separator();
-            this.iTalk_Separator3 = new iTalk.iTalk_Separator();
-            this.iTalk_Separator4 = new iTalk.iTalk_Separator();
-            this.iTalk_Separator5 = new iTalk.iTalk_Separator();
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.iTalk_ThemeContainer1.SuspendLayout();
             this.iTalk_TabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -203,6 +206,8 @@
             this.iTalk_GroupBox2.SuspendLayout();
             this.tabPage13.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
+            this.tabPage14.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // timer1
@@ -246,6 +251,7 @@
             this.iTalk_TabControl1.Controls.Add(this.tabPage10);
             this.iTalk_TabControl1.Controls.Add(this.tabPage11);
             this.iTalk_TabControl1.Controls.Add(this.tabPage12);
+            this.iTalk_TabControl1.Controls.Add(this.tabPage14);
             this.iTalk_TabControl1.Controls.Add(this.tabPage13);
             this.iTalk_TabControl1.DrawMode = System.Windows.Forms.TabDrawMode.OwnerDrawFixed;
             this.iTalk_TabControl1.ItemSize = new System.Drawing.Size(44, 135);
@@ -1755,6 +1761,46 @@
             this.tabPage13.TabIndex = 12;
             this.tabPage13.Text = "About";
             // 
+            // iTalk_Separator5
+            // 
+            this.iTalk_Separator5.Location = new System.Drawing.Point(26, 460);
+            this.iTalk_Separator5.Name = "iTalk_Separator5";
+            this.iTalk_Separator5.Size = new System.Drawing.Size(835, 13);
+            this.iTalk_Separator5.TabIndex = 14;
+            this.iTalk_Separator5.Text = "iTalk_Separator5";
+            // 
+            // iTalk_Separator4
+            // 
+            this.iTalk_Separator4.Location = new System.Drawing.Point(26, 366);
+            this.iTalk_Separator4.Name = "iTalk_Separator4";
+            this.iTalk_Separator4.Size = new System.Drawing.Size(835, 13);
+            this.iTalk_Separator4.TabIndex = 13;
+            this.iTalk_Separator4.Text = "iTalk_Separator4";
+            // 
+            // iTalk_Separator3
+            // 
+            this.iTalk_Separator3.Location = new System.Drawing.Point(26, 274);
+            this.iTalk_Separator3.Name = "iTalk_Separator3";
+            this.iTalk_Separator3.Size = new System.Drawing.Size(841, 13);
+            this.iTalk_Separator3.TabIndex = 12;
+            this.iTalk_Separator3.Text = "iTalk_Separator3";
+            // 
+            // iTalk_Separator2
+            // 
+            this.iTalk_Separator2.Location = new System.Drawing.Point(26, 186);
+            this.iTalk_Separator2.Name = "iTalk_Separator2";
+            this.iTalk_Separator2.Size = new System.Drawing.Size(835, 13);
+            this.iTalk_Separator2.TabIndex = 11;
+            this.iTalk_Separator2.Text = "iTalk_Separator2";
+            // 
+            // iTalk_Separator1
+            // 
+            this.iTalk_Separator1.Location = new System.Drawing.Point(26, 96);
+            this.iTalk_Separator1.Name = "iTalk_Separator1";
+            this.iTalk_Separator1.Size = new System.Drawing.Size(835, 13);
+            this.iTalk_Separator1.TabIndex = 10;
+            this.iTalk_Separator1.Text = "iTalk_Separator1";
+            // 
             // iTalk_HeaderLabel46
             // 
             this.iTalk_HeaderLabel46.AutoSize = true;
@@ -1864,6 +1910,26 @@
             this.pictureBox15.TabIndex = 0;
             this.pictureBox15.TabStop = false;
             // 
+            // tabPage14
+            // 
+            this.tabPage14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
+            this.tabPage14.Controls.Add(this.dataGridView1);
+            this.tabPage14.Location = new System.Drawing.Point(139, 4);
+            this.tabPage14.Name = "tabPage14";
+            this.tabPage14.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage14.Size = new System.Drawing.Size(1013, 670);
+            this.tabPage14.TabIndex = 13;
+            this.tabPage14.Text = "Clasament";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(3, 6);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(246, 661);
+            this.dataGridView1.TabIndex = 0;
+            // 
             // iTalk_ControlBox1
             // 
             this.iTalk_ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -1874,45 +1940,9 @@
             this.iTalk_ControlBox1.TabIndex = 1;
             this.iTalk_ControlBox1.Text = "iTalk_ControlBox1";
             // 
-            // iTalk_Separator1
+            // timer2
             // 
-            this.iTalk_Separator1.Location = new System.Drawing.Point(26, 96);
-            this.iTalk_Separator1.Name = "iTalk_Separator1";
-            this.iTalk_Separator1.Size = new System.Drawing.Size(835, 13);
-            this.iTalk_Separator1.TabIndex = 10;
-            this.iTalk_Separator1.Text = "iTalk_Separator1";
-            // 
-            // iTalk_Separator2
-            // 
-            this.iTalk_Separator2.Location = new System.Drawing.Point(26, 186);
-            this.iTalk_Separator2.Name = "iTalk_Separator2";
-            this.iTalk_Separator2.Size = new System.Drawing.Size(835, 13);
-            this.iTalk_Separator2.TabIndex = 11;
-            this.iTalk_Separator2.Text = "iTalk_Separator2";
-            // 
-            // iTalk_Separator3
-            // 
-            this.iTalk_Separator3.Location = new System.Drawing.Point(26, 274);
-            this.iTalk_Separator3.Name = "iTalk_Separator3";
-            this.iTalk_Separator3.Size = new System.Drawing.Size(841, 13);
-            this.iTalk_Separator3.TabIndex = 12;
-            this.iTalk_Separator3.Text = "iTalk_Separator3";
-            // 
-            // iTalk_Separator4
-            // 
-            this.iTalk_Separator4.Location = new System.Drawing.Point(26, 366);
-            this.iTalk_Separator4.Name = "iTalk_Separator4";
-            this.iTalk_Separator4.Size = new System.Drawing.Size(835, 13);
-            this.iTalk_Separator4.TabIndex = 13;
-            this.iTalk_Separator4.Text = "iTalk_Separator4";
-            // 
-            // iTalk_Separator5
-            // 
-            this.iTalk_Separator5.Location = new System.Drawing.Point(26, 460);
-            this.iTalk_Separator5.Name = "iTalk_Separator5";
-            this.iTalk_Separator5.Size = new System.Drawing.Size(835, 13);
-            this.iTalk_Separator5.TabIndex = 14;
-            this.iTalk_Separator5.Text = "iTalk_Separator5";
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
             // PI
             // 
@@ -1975,6 +2005,8 @@
             this.tabPage13.ResumeLayout(false);
             this.tabPage13.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
+            this.tabPage14.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2122,6 +2154,9 @@
         private iTalk.iTalk_Separator iTalk_Separator3;
         private iTalk.iTalk_Separator iTalk_Separator2;
         private iTalk.iTalk_Separator iTalk_Separator1;
+        private System.Windows.Forms.TabPage tabPage14;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Timer timer2;
     }
 }
 

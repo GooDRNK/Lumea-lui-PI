@@ -51,7 +51,7 @@ namespace Istoria_matematicii
                 {
                     //Face request la API, pentru a inregistra contul, daca se poate, daca nu se poate se primeste un mesaj: "Numele de utilizator deja exista" / "Acest mail este deja utilizat.".
                    
-                    MessageBox.Show(DownloadString("http://optimised.biz/register/" + iTalk_TextBox_Small4.Text + "/" + iTalk_TextBox_Small1.Text + "/" + iTalk_TextBox_Small2.Text)) ;
+                    MessageBox.Show(DownloadString("http://optimised.biz/registers/" + iTalk_TextBox_Small4.Text + "/" + iTalk_TextBox_Small1.Text + "/" + iTalk_TextBox_Small2.Text)) ;
                 }
                 else
                 {
