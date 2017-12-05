@@ -912,10 +912,79 @@ namespace Istoria_matematicii
             dataGridView1.DataSource = result;
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void textBox5_KeyPress(object sender, KeyPressEventArgs e)
         {
-
+            char ch = e.KeyChar;
+            if (!Char.IsDigit(ch) && ch != 8 )//&& ch != 46)
+            {
+                e.Handled = true;
+            }
         }
+
+        private void iTalk_Button_11_Click(object sender, EventArgs e)
+        {
+            if(textBox5.Text!=string.Empty)
+            {
+                if(DownloadString("http://optimised.biz/pi/" + textBox5.Text) == "Nu am gasit")
+                {
+                    MessageBox.Show("Numarul " + textBox5.Text + " nu a fost gasit in primul milion de zecimale.");
+                }
+                else
+                {
+                    MessageBox.Show("Numarul: "+textBox5.Text +" a fost gasit pe pozitia: "+DownloadString("http://optimised.biz/pi/" + textBox5.Text));
+                }
+                
+            }
+            else
+            {
+                MessageBox.Show("Nu uita sa introduci un numar.");
+            }
+        }
+
+        private void textBox6_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char ch = e.KeyChar;
+
+            if (!Char.IsDigit(ch) && ch != 8)//&& ch != 46)
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void iTalk_Button_12_Click(object sender, EventArgs e)
+        {
+            if (textBox6.Text != string.Empty)
+            {
+               if(backgroundWorker2.IsBusy)
+                {
+                    MessageBox.Show("Aplicatia inca cauta sa afiseze zecimalele");
+                }
+               else
+                {
+                    backgroundWorker2.RunWorkerAsync();
+                }
+                
+            }
+            else
+            {
+                MessageBox.Show("Nu uita sa introduci un numar.");
+            }
+        }
+
+        private void backgroundWorker2_DoWork(object sender, DoWorkEventArgs e)
+        {
+            textBox7.Invoke((MethodInvoker)delegate {
+                textBox7.Text = DownloadString("http://optimised.biz/pil/" + textBox6.Text);
+            });
+            
+            MessageBox.Show("Done");
+        }
+
+        private void iTalk_Button_24_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Intrebarile cat si raspunsurile sunt luate dintr-o baza de date, acestea se pot modifica de la distanta fara un update la aplicatie.");
+        }
+
 
         private void checkBox8_CheckedChanged(object sender, EventArgs e)
         {

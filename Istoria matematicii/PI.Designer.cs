@@ -57,6 +57,17 @@
             this.iTalk_HeaderLabel9 = new iTalk.iTalk_HeaderLabel();
             this.iTalk_HeaderLabel8 = new iTalk.iTalk_HeaderLabel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.tabPage15 = new System.Windows.Forms.TabPage();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.iTalk_HeaderLabel52 = new iTalk.iTalk_HeaderLabel();
+            this.iTalk_HeaderLabel51 = new iTalk.iTalk_HeaderLabel();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.iTalk_Button_12 = new iTalk.iTalk_Button_1();
+            this.iTalk_HeaderLabel50 = new iTalk.iTalk_HeaderLabel();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.iTalk_Button_11 = new iTalk.iTalk_Button_1();
+            this.iTalk_HeaderLabel49 = new iTalk.iTalk_HeaderLabel();
+            this.iTalk_HeaderLabel48 = new iTalk.iTalk_HeaderLabel();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.iTalk_HeaderLabel23 = new iTalk.iTalk_HeaderLabel();
@@ -114,6 +125,7 @@
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.tabPage12 = new System.Windows.Forms.TabPage();
             this.iTalk_GroupBox2 = new iTalk.iTalk_GroupBox();
+            this.iTalk_Button_24 = new iTalk.iTalk_Button_2();
             this.iTalk_Button_23 = new iTalk.iTalk_Button_2();
             this.checkBox16 = new System.Windows.Forms.CheckBox();
             this.checkBox17 = new System.Windows.Forms.CheckBox();
@@ -155,6 +167,8 @@
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.intrebare1 = new iTalk.iTalk_HeaderLabel();
+            this.tabPage14 = new System.Windows.Forms.TabPage();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tabPage13 = new System.Windows.Forms.TabPage();
             this.iTalk_Separator5 = new iTalk.iTalk_Separator();
             this.iTalk_Separator4 = new iTalk.iTalk_Separator();
@@ -170,16 +184,16 @@
             this.iTalk_HeaderLabel41 = new iTalk.iTalk_HeaderLabel();
             this.iTalk_HeaderLabel40 = new iTalk.iTalk_HeaderLabel();
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
-            this.tabPage14 = new System.Windows.Forms.TabPage();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.iTalk_ControlBox1 = new iTalk.iTalk_ControlBox();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
             this.iTalk_ThemeContainer1.SuspendLayout();
             this.iTalk_TabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.tabPage15.SuspendLayout();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.tabPage4.SuspendLayout();
@@ -204,10 +218,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             this.tabPage12.SuspendLayout();
             this.iTalk_GroupBox2.SuspendLayout();
-            this.tabPage13.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
             this.tabPage14.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.tabPage13.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
             this.SuspendLayout();
             // 
             // timer1
@@ -241,6 +255,7 @@
             this.iTalk_TabControl1.Alignment = System.Windows.Forms.TabAlignment.Left;
             this.iTalk_TabControl1.Controls.Add(this.tabPage1);
             this.iTalk_TabControl1.Controls.Add(this.tabPage2);
+            this.iTalk_TabControl1.Controls.Add(this.tabPage15);
             this.iTalk_TabControl1.Controls.Add(this.tabPage3);
             this.iTalk_TabControl1.Controls.Add(this.tabPage4);
             this.iTalk_TabControl1.Controls.Add(this.tabPage5);
@@ -556,6 +571,143 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
+            // 
+            // tabPage15
+            // 
+            this.tabPage15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
+            this.tabPage15.Controls.Add(this.textBox7);
+            this.tabPage15.Controls.Add(this.iTalk_HeaderLabel52);
+            this.tabPage15.Controls.Add(this.iTalk_HeaderLabel51);
+            this.tabPage15.Controls.Add(this.textBox6);
+            this.tabPage15.Controls.Add(this.iTalk_Button_12);
+            this.tabPage15.Controls.Add(this.iTalk_HeaderLabel50);
+            this.tabPage15.Controls.Add(this.textBox5);
+            this.tabPage15.Controls.Add(this.iTalk_Button_11);
+            this.tabPage15.Controls.Add(this.iTalk_HeaderLabel49);
+            this.tabPage15.Controls.Add(this.iTalk_HeaderLabel48);
+            this.tabPage15.Location = new System.Drawing.Point(139, 4);
+            this.tabPage15.Name = "tabPage15";
+            this.tabPage15.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage15.Size = new System.Drawing.Size(1013, 670);
+            this.tabPage15.TabIndex = 14;
+            this.tabPage15.Text = "Search PI";
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(13, 232);
+            this.textBox7.MaxLength = 1000000;
+            this.textBox7.Multiline = true;
+            this.textBox7.Name = "textBox7";
+            this.textBox7.ReadOnly = true;
+            this.textBox7.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBox7.Size = new System.Drawing.Size(993, 432);
+            this.textBox7.TabIndex = 10;
+            // 
+            // iTalk_HeaderLabel52
+            // 
+            this.iTalk_HeaderLabel52.AutoSize = true;
+            this.iTalk_HeaderLabel52.BackColor = System.Drawing.Color.Transparent;
+            this.iTalk_HeaderLabel52.Font = new System.Drawing.Font("Segoe UI", 25F);
+            this.iTalk_HeaderLabel52.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.iTalk_HeaderLabel52.Location = new System.Drawing.Point(6, 182);
+            this.iTalk_HeaderLabel52.Name = "iTalk_HeaderLabel52";
+            this.iTalk_HeaderLabel52.Size = new System.Drawing.Size(169, 46);
+            this.iTalk_HeaderLabel52.TabIndex = 9;
+            this.iTalk_HeaderLabel52.Text = "Zecimale :";
+            // 
+            // iTalk_HeaderLabel51
+            // 
+            this.iTalk_HeaderLabel51.AutoSize = true;
+            this.iTalk_HeaderLabel51.BackColor = System.Drawing.Color.Transparent;
+            this.iTalk_HeaderLabel51.Font = new System.Drawing.Font("Segoe UI", 25F);
+            this.iTalk_HeaderLabel51.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.iTalk_HeaderLabel51.Location = new System.Drawing.Point(6, 136);
+            this.iTalk_HeaderLabel51.Name = "iTalk_HeaderLabel51";
+            this.iTalk_HeaderLabel51.Size = new System.Drawing.Size(871, 46);
+            this.iTalk_HeaderLabel51.TabIndex = 8;
+            this.iTalk_HeaderLabel51.Text = "Tasteaza numarul de zecimale dorite si incepe sa le inveti.";
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(176, 201);
+            this.textBox6.MaxLength = 10;
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(153, 22);
+            this.textBox6.TabIndex = 7;
+            this.textBox6.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox6_KeyPress);
+            // 
+            // iTalk_Button_12
+            // 
+            this.iTalk_Button_12.BackColor = System.Drawing.Color.Transparent;
+            this.iTalk_Button_12.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.iTalk_Button_12.Image = null;
+            this.iTalk_Button_12.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iTalk_Button_12.Location = new System.Drawing.Point(358, 201);
+            this.iTalk_Button_12.Name = "iTalk_Button_12";
+            this.iTalk_Button_12.Size = new System.Drawing.Size(103, 22);
+            this.iTalk_Button_12.TabIndex = 6;
+            this.iTalk_Button_12.Text = "Check";
+            this.iTalk_Button_12.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.iTalk_Button_12.Click += new System.EventHandler(this.iTalk_Button_12_Click);
+            // 
+            // iTalk_HeaderLabel50
+            // 
+            this.iTalk_HeaderLabel50.AutoSize = true;
+            this.iTalk_HeaderLabel50.BackColor = System.Drawing.Color.Transparent;
+            this.iTalk_HeaderLabel50.Font = new System.Drawing.Font("Segoe UI", 25F);
+            this.iTalk_HeaderLabel50.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.iTalk_HeaderLabel50.Location = new System.Drawing.Point(6, 90);
+            this.iTalk_HeaderLabel50.Name = "iTalk_HeaderLabel50";
+            this.iTalk_HeaderLabel50.Size = new System.Drawing.Size(921, 46);
+            this.iTalk_HeaderLabel50.TabIndex = 5;
+            this.iTalk_HeaderLabel50.Text = "Vrei sa vezi primele N zecimale ale lui PI pana intr-un milion?";
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(645, 62);
+            this.textBox5.MaxLength = 10;
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(153, 22);
+            this.textBox5.TabIndex = 4;
+            this.textBox5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox5_KeyPress);
+            // 
+            // iTalk_Button_11
+            // 
+            this.iTalk_Button_11.BackColor = System.Drawing.Color.Transparent;
+            this.iTalk_Button_11.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.iTalk_Button_11.Image = null;
+            this.iTalk_Button_11.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iTalk_Button_11.Location = new System.Drawing.Point(827, 62);
+            this.iTalk_Button_11.Name = "iTalk_Button_11";
+            this.iTalk_Button_11.Size = new System.Drawing.Size(103, 22);
+            this.iTalk_Button_11.TabIndex = 3;
+            this.iTalk_Button_11.Text = "Check";
+            this.iTalk_Button_11.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.iTalk_Button_11.Click += new System.EventHandler(this.iTalk_Button_11_Click);
+            // 
+            // iTalk_HeaderLabel49
+            // 
+            this.iTalk_HeaderLabel49.AutoSize = true;
+            this.iTalk_HeaderLabel49.BackColor = System.Drawing.Color.Transparent;
+            this.iTalk_HeaderLabel49.Font = new System.Drawing.Font("Segoe UI", 25F);
+            this.iTalk_HeaderLabel49.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.iTalk_HeaderLabel49.Location = new System.Drawing.Point(6, 44);
+            this.iTalk_HeaderLabel49.Name = "iTalk_HeaderLabel49";
+            this.iTalk_HeaderLabel49.Size = new System.Drawing.Size(633, 46);
+            this.iTalk_HeaderLabel49.TabIndex = 2;
+            this.iTalk_HeaderLabel49.Text = "Introdu un numar si vezi daca exista in PI:";
+            // 
+            // iTalk_HeaderLabel48
+            // 
+            this.iTalk_HeaderLabel48.AutoSize = true;
+            this.iTalk_HeaderLabel48.BackColor = System.Drawing.Color.Transparent;
+            this.iTalk_HeaderLabel48.Font = new System.Drawing.Font("Segoe UI", 22F);
+            this.iTalk_HeaderLabel48.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.iTalk_HeaderLabel48.Location = new System.Drawing.Point(6, 3);
+            this.iTalk_HeaderLabel48.Name = "iTalk_HeaderLabel48";
+            this.iTalk_HeaderLabel48.Size = new System.Drawing.Size(1003, 41);
+            this.iTalk_HeaderLabel48.TabIndex = 1;
+            this.iTalk_HeaderLabel48.Text = "Esti curios sa cauti un anumit numar in primul milion de zecimale ale lui PI?";
             // 
             // tabPage3
             // 
@@ -1232,6 +1384,7 @@
             // iTalk_GroupBox2
             // 
             this.iTalk_GroupBox2.BackColor = System.Drawing.Color.Transparent;
+            this.iTalk_GroupBox2.Controls.Add(this.iTalk_Button_24);
             this.iTalk_GroupBox2.Controls.Add(this.iTalk_Button_23);
             this.iTalk_GroupBox2.Controls.Add(this.checkBox16);
             this.iTalk_GroupBox2.Controls.Add(this.checkBox17);
@@ -1280,6 +1433,21 @@
             this.iTalk_GroupBox2.Size = new System.Drawing.Size(1004, 664);
             this.iTalk_GroupBox2.TabIndex = 0;
             this.iTalk_GroupBox2.Text = "Quiz Test";
+            // 
+            // iTalk_Button_24
+            // 
+            this.iTalk_Button_24.BackColor = System.Drawing.Color.Transparent;
+            this.iTalk_Button_24.Font = new System.Drawing.Font("Segoe UI", 14F);
+            this.iTalk_Button_24.ForeColor = System.Drawing.Color.White;
+            this.iTalk_Button_24.Image = null;
+            this.iTalk_Button_24.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iTalk_Button_24.Location = new System.Drawing.Point(51, 3);
+            this.iTalk_Button_24.Name = "iTalk_Button_24";
+            this.iTalk_Button_24.Size = new System.Drawing.Size(56, 19);
+            this.iTalk_Button_24.TabIndex = 41;
+            this.iTalk_Button_24.Text = "Info";
+            this.iTalk_Button_24.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.iTalk_Button_24.Click += new System.EventHandler(this.iTalk_Button_24_Click);
             // 
             // iTalk_Button_23
             // 
@@ -1736,6 +1904,26 @@
             this.intrebare1.Size = new System.Drawing.Size(0, 19);
             this.intrebare1.TabIndex = 0;
             // 
+            // tabPage14
+            // 
+            this.tabPage14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
+            this.tabPage14.Controls.Add(this.dataGridView1);
+            this.tabPage14.Location = new System.Drawing.Point(139, 4);
+            this.tabPage14.Name = "tabPage14";
+            this.tabPage14.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage14.Size = new System.Drawing.Size(1013, 670);
+            this.tabPage14.TabIndex = 13;
+            this.tabPage14.Text = "Clasament";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(3, 6);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(246, 661);
+            this.dataGridView1.TabIndex = 0;
+            // 
             // tabPage13
             // 
             this.tabPage13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
@@ -1910,26 +2098,6 @@
             this.pictureBox15.TabIndex = 0;
             this.pictureBox15.TabStop = false;
             // 
-            // tabPage14
-            // 
-            this.tabPage14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
-            this.tabPage14.Controls.Add(this.dataGridView1);
-            this.tabPage14.Location = new System.Drawing.Point(139, 4);
-            this.tabPage14.Name = "tabPage14";
-            this.tabPage14.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage14.Size = new System.Drawing.Size(1013, 670);
-            this.tabPage14.TabIndex = 13;
-            this.tabPage14.Text = "Clasament";
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 6);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(246, 661);
-            this.dataGridView1.TabIndex = 0;
-            // 
             // iTalk_ControlBox1
             // 
             this.iTalk_ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -1943,6 +2111,10 @@
             // timer2
             // 
             this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            // 
+            // backgroundWorker2
+            // 
+            this.backgroundWorker2.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker2_DoWork);
             // 
             // PI
             // 
@@ -1968,6 +2140,8 @@
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.tabPage15.ResumeLayout(false);
+            this.tabPage15.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
@@ -2002,11 +2176,11 @@
             this.tabPage12.ResumeLayout(false);
             this.iTalk_GroupBox2.ResumeLayout(false);
             this.iTalk_GroupBox2.PerformLayout();
+            this.tabPage14.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.tabPage13.ResumeLayout(false);
             this.tabPage13.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
-            this.tabPage14.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2157,6 +2331,19 @@
         private System.Windows.Forms.TabPage tabPage14;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Timer timer2;
+        private iTalk.iTalk_Button_2 iTalk_Button_24;
+        private System.Windows.Forms.TabPage tabPage15;
+        private iTalk.iTalk_Button_1 iTalk_Button_11;
+        private iTalk.iTalk_HeaderLabel iTalk_HeaderLabel49;
+        private iTalk.iTalk_HeaderLabel iTalk_HeaderLabel48;
+        private System.Windows.Forms.TextBox textBox5;
+        private iTalk.iTalk_HeaderLabel iTalk_HeaderLabel52;
+        private iTalk.iTalk_HeaderLabel iTalk_HeaderLabel51;
+        private System.Windows.Forms.TextBox textBox6;
+        private iTalk.iTalk_Button_1 iTalk_Button_12;
+        private iTalk.iTalk_HeaderLabel iTalk_HeaderLabel50;
+        private System.Windows.Forms.TextBox textBox7;
+        private System.ComponentModel.BackgroundWorker backgroundWorker2;
     }
 }
 
