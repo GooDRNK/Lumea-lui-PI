@@ -950,7 +950,7 @@ namespace Istoria_matematicii
                 e.Handled = true;
             }
         }
-
+        
         private void iTalk_Button_12_Click(object sender, EventArgs e)
         {
             if (textBox6.Text != string.Empty)
