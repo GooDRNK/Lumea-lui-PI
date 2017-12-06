@@ -6,31 +6,8 @@ Concursul
 •	Tema Istoria Matematicii
 
 
-
-				Lumea lui PI
-
-
-
-
-
-
-
 •	Autor: Eremia Mihai Daniel, Liceul Teoretic “Ion Cantacuzino”, Pitești
 •	Prof. îndrumător: Enescu Cătălina (INFO) / Tănasie Elena (MATE)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 Cuprins
@@ -38,13 +15,6 @@ Prezentare generală	3
 Resurse necesare	5
 Manual de utilizare	5
 Detalii tehnice	8
-
-
-
-
-
-
-
 
 
 •	Prezentare generală
