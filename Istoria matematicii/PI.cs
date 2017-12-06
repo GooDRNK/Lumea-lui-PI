@@ -970,7 +970,7 @@ namespace Istoria_matematicii
                 MessageBox.Show("Nu uita sa introduci un numar.");
             }
         }
-
+         
         private void backgroundWorker2_DoWork(object sender, DoWorkEventArgs e)
         {
             textBox7.Invoke((MethodInvoker)delegate {
