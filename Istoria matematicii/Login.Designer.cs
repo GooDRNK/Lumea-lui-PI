@@ -187,7 +187,7 @@
             this.iTalk_TextBox_Small4.Font = new System.Drawing.Font("Tahoma", 11F);
             this.iTalk_TextBox_Small4.ForeColor = System.Drawing.Color.DimGray;
             this.iTalk_TextBox_Small4.Location = new System.Drawing.Point(456, 81);
-            this.iTalk_TextBox_Small4.MaxLength = 25;
+            this.iTalk_TextBox_Small4.MaxLength = 75;
             this.iTalk_TextBox_Small4.Multiline = false;
             this.iTalk_TextBox_Small4.Name = "iTalk_TextBox_Small4";
             this.iTalk_TextBox_Small4.ReadOnly = false;

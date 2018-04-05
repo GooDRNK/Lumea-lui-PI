@@ -187,6 +187,7 @@
             this.iTalk_ControlBox1 = new iTalk.iTalk_ControlBox();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
+            this.Col = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.iTalk_ThemeContainer1.SuspendLayout();
             this.iTalk_TabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -1919,9 +1920,11 @@
             // 
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Col});
             this.dataGridView1.Location = new System.Drawing.Point(3, 6);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(246, 661);
+            this.dataGridView1.Size = new System.Drawing.Size(345, 661);
             this.dataGridView1.TabIndex = 0;
             // 
             // tabPage13
@@ -2049,9 +2052,9 @@
             this.iTalk_HeaderLabel43.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
             this.iTalk_HeaderLabel43.Location = new System.Drawing.Point(18, 225);
             this.iTalk_HeaderLabel43.Name = "iTalk_HeaderLabel43";
-            this.iTalk_HeaderLabel43.Size = new System.Drawing.Size(849, 46);
+            this.iTalk_HeaderLabel43.Size = new System.Drawing.Size(410, 46);
             this.iTalk_HeaderLabel43.TabIndex = 4;
-            this.iTalk_HeaderLabel43.Text = "Profesori: Enescu Cătalina (INFO) / Tănasie Elena (MATE)";
+            this.iTalk_HeaderLabel43.Text = "Profesori: Enescu Cătalina ";
             // 
             // iTalk_HeaderLabel42
             // 
@@ -2072,9 +2075,9 @@
             this.iTalk_HeaderLabel41.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
             this.iTalk_HeaderLabel41.Location = new System.Drawing.Point(18, 137);
             this.iTalk_HeaderLabel41.Name = "iTalk_HeaderLabel41";
-            this.iTalk_HeaderLabel41.Size = new System.Drawing.Size(668, 46);
+            this.iTalk_HeaderLabel41.Size = new System.Drawing.Size(767, 46);
             this.iTalk_HeaderLabel41.TabIndex = 2;
-            this.iTalk_HeaderLabel41.Text = "Clasa: a X-a, Liceul Teoretic Ion Cantacuzino";
+            this.iTalk_HeaderLabel41.Text = "Clasa: a X-a/a IX-a, Liceul Teoretic Ion Cantacuzino";
             // 
             // iTalk_HeaderLabel40
             // 
@@ -2084,9 +2087,9 @@
             this.iTalk_HeaderLabel40.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
             this.iTalk_HeaderLabel40.Location = new System.Drawing.Point(18, 47);
             this.iTalk_HeaderLabel40.Name = "iTalk_HeaderLabel40";
-            this.iTalk_HeaderLabel40.Size = new System.Drawing.Size(478, 46);
+            this.iTalk_HeaderLabel40.Size = new System.Drawing.Size(751, 46);
             this.iTalk_HeaderLabel40.TabIndex = 1;
-            this.iTalk_HeaderLabel40.Text = "Realizator: Eremia Mihai Daniel";
+            this.iTalk_HeaderLabel40.Text = "Realizator: Eremia Mihai Daniel / Marinescu Paula";
             // 
             // pictureBox15
             // 
@@ -2115,6 +2118,12 @@
             // backgroundWorker2
             // 
             this.backgroundWorker2.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker2_DoWork);
+            // 
+            // Col
+            // 
+            this.Col.HeaderText = "Nr.";
+            this.Col.Name = "Col";
+            this.Col.ReadOnly = true;
             // 
             // PI
             // 
@@ -2344,6 +2353,7 @@
         private iTalk.iTalk_HeaderLabel iTalk_HeaderLabel50;
         private System.Windows.Forms.TextBox textBox7;
         private System.ComponentModel.BackgroundWorker backgroundWorker2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Col;
     }
 }
 

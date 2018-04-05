@@ -430,7 +430,7 @@ namespace Istoria_matematicii
             }
             else
             {
-                MessageBox.Show(DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/" + Rs1 + "/" + Rs2 + "/" + Rs3 + "/" + Rs4 + "/" + Rs5 + "/" + Rs6 + "/" + Rs7 + "/" + Rs8 + "/" + Rs9 + "/" + Rs10));
+                MessageBox.Show(DownloadString("http://optimised.biz/score/" + Parola + "/" + Username + "/" + Rs1 + "/" + Rs2 + "/" + Rs3 + "/" + Rs4 + "/" + Rs5 + "/" + Rs6 + "/" + Rs7 + "/" + Rs8 + "/" + Rs9 + "/" + Rs10));
             }
         }
         #endregion
@@ -438,36 +438,36 @@ namespace Istoria_matematicii
         private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
         {
             intrebare1.Invoke((MethodInvoker)delegate {
-                intrebare1.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/1");
+                intrebare1.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/1/0");
             });
             Thread.Sleep(10);
             intrebare2.Invoke((MethodInvoker)delegate {
-                intrebare2.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/2");
+                intrebare2.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/2/0");
             });
             Thread.Sleep(10);
             intrebare3.Invoke((MethodInvoker)delegate {
-                intrebare3.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/3");
+                intrebare3.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/3/0");
             }); Thread.Sleep(10);
             intrebare4.Invoke((MethodInvoker)delegate {
-                intrebare4.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/4");
+                intrebare4.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/4/0");
             }); Thread.Sleep(10);
             intrebare5.Invoke((MethodInvoker)delegate {
-                intrebare5.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/5");
+                intrebare5.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/5/0");
             }); Thread.Sleep(10);
             intrebare6.Invoke((MethodInvoker)delegate {
-                intrebare6.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/6");
+                intrebare6.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/6/0");
             }); Thread.Sleep(10);
             intrebare7.Invoke((MethodInvoker)delegate {
-                intrebare7.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/7");
+                intrebare7.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/7/0");
             }); Thread.Sleep(10);
             intrebare8.Invoke((MethodInvoker)delegate {
-                intrebare8.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/8");
+                intrebare8.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/8/0");
             }); Thread.Sleep(10);
             intrebare9.Invoke((MethodInvoker)delegate {
-                intrebare9.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/9");
+                intrebare9.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/9/0");
             }); Thread.Sleep(10);
             intrebare10.Invoke((MethodInvoker)delegate {
-                intrebare10.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/10");
+                intrebare10.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/10/0");
             }); Thread.Sleep(10);
 
 
@@ -480,6 +480,7 @@ namespace Istoria_matematicii
             checkBox3.Invoke((MethodInvoker)delegate {
                 checkBox3.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/1/3/");
             }); Thread.Sleep(10);
+
             checkBox4.Invoke((MethodInvoker)delegate {
                 checkBox4.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/2/1/");
             }); Thread.Sleep(10);
@@ -910,6 +911,14 @@ namespace Istoria_matematicii
         {
             var result = JsonConvert.DeserializeObject<List<JsonResult>>(DownloadString("http://optimised.biz/clasament"));
             dataGridView1.DataSource = result;
+            int nr = 0;
+            foreach (DataGridViewRow row in dataGridView1.Rows)
+            {
+                dataGridView1.Rows[nr].Cells[0].Value = nr+1;
+                nr++;
+            }
+
+            
         }
 
         private void textBox5_KeyPress(object sender, KeyPressEventArgs e)
@@ -925,13 +934,14 @@ namespace Istoria_matematicii
         {
             if(textBox5.Text!=string.Empty)
             {
-                if(DownloadString("http://optimised.biz/pi/" + textBox5.Text) == "Nu am gasit")
+                var rez = DownloadString("http://optimised.biz/pi/" + textBox5.Text);
+                if (rez.ToString() == "Nu am gasit")
                 {
                     MessageBox.Show("Numarul " + textBox5.Text + " nu a fost gasit in primul milion de zecimale.");
                 }
                 else
                 {
-                    MessageBox.Show("Numarul: "+textBox5.Text +" a fost gasit pe pozitia: "+DownloadString("http://optimised.biz/pi/" + textBox5.Text));
+                    MessageBox.Show("Numarul: " + textBox5.Text + " a fost gasit pe pozitia: " + rez.ToString());
                 }
                 
             }
@@ -973,11 +983,17 @@ namespace Istoria_matematicii
          
         private void backgroundWorker2_DoWork(object sender, DoWorkEventArgs e)
         {
-            textBox7.Invoke((MethodInvoker)delegate {
-                textBox7.Text = DownloadString("http://optimised.biz/pil/" + textBox6.Text);
-            });
-            
-            MessageBox.Show("Done");
+            try
+            {
+                textBox7.Invoke((MethodInvoker)delegate {
+                    textBox7.Text = DownloadString("http://optimised.biz/pil/" + textBox6.Text);
+                });
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
         private void iTalk_Button_24_Click(object sender, EventArgs e)
