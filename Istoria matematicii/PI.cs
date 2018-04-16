@@ -339,132 +339,175 @@ namespace Istoria_matematicii
         #region Get Questions
         private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
         {
-            intrebare1.Invoke((MethodInvoker)delegate {
-                intrebare1.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/1/0");
-            });
-            Thread.Sleep(10);
-            intrebare2.Invoke((MethodInvoker)delegate {
-                intrebare2.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/2/0");
-            });
-            Thread.Sleep(10);
-            intrebare3.Invoke((MethodInvoker)delegate {
-                intrebare3.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/3/0");
-            }); Thread.Sleep(10);
-            intrebare4.Invoke((MethodInvoker)delegate {
-                intrebare4.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/4/0");
-            }); Thread.Sleep(10);
-            intrebare5.Invoke((MethodInvoker)delegate {
-                intrebare5.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/5/0");
-            }); Thread.Sleep(10);
-            intrebare6.Invoke((MethodInvoker)delegate {
-                intrebare6.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/6/0");
-            }); Thread.Sleep(10);
-            intrebare7.Invoke((MethodInvoker)delegate {
-                intrebare7.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/7/0");
-            }); Thread.Sleep(10);
-            intrebare8.Invoke((MethodInvoker)delegate {
-                intrebare8.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/8/0");
-            }); Thread.Sleep(10);
-            intrebare9.Invoke((MethodInvoker)delegate {
-                intrebare9.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/9/0");
-            }); Thread.Sleep(10);
-            intrebare10.Invoke((MethodInvoker)delegate {
-                intrebare10.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/10/0");
-            }); Thread.Sleep(10);
+            while (true)
+            {
+                intrebare1.Invoke((MethodInvoker)delegate
+                {
+                    intrebare1.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/1/0");
+                });
+
+                intrebare2.Invoke((MethodInvoker)delegate
+                {
+                    intrebare2.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/2/0");
+                });
+
+                intrebare3.Invoke((MethodInvoker)delegate
+                {
+                    intrebare3.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/3/0");
+                });
+                intrebare4.Invoke((MethodInvoker)delegate
+                {
+                    intrebare4.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/4/0");
+                });
+                intrebare5.Invoke((MethodInvoker)delegate
+                {
+                    intrebare5.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/5/0");
+                });
+                intrebare6.Invoke((MethodInvoker)delegate
+                {
+                    intrebare6.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/6/0");
+                });
+                intrebare7.Invoke((MethodInvoker)delegate
+                {
+                    intrebare7.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/7/0");
+                });
+                intrebare8.Invoke((MethodInvoker)delegate
+                {
+                    intrebare8.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/8/0");
+                });
+                intrebare9.Invoke((MethodInvoker)delegate
+                {
+                    intrebare9.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/9/0");
+                });
+                intrebare10.Invoke((MethodInvoker)delegate
+                {
+                    intrebare10.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/10/0");
+                });
 
 
-            checkBox1.Invoke((MethodInvoker)delegate {
-                checkBox1.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/1/1/");
-            }); Thread.Sleep(10);
-            checkBox2.Invoke((MethodInvoker)delegate {
-                checkBox2.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/1/2/");
-            }); Thread.Sleep(10);
-            checkBox3.Invoke((MethodInvoker)delegate {
-                checkBox3.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/1/3/");
-            }); Thread.Sleep(10);
+                checkBox1.Invoke((MethodInvoker)delegate
+                {
+                    checkBox1.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/1/1/");
+                });
+                checkBox2.Invoke((MethodInvoker)delegate
+                {
+                    checkBox2.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/1/2/");
+                });
+                checkBox3.Invoke((MethodInvoker)delegate
+                {
+                    checkBox3.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/1/3/");
+                });
 
-            checkBox4.Invoke((MethodInvoker)delegate {
-                checkBox4.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/2/1/");
-            }); Thread.Sleep(10);
-            checkBox5.Invoke((MethodInvoker)delegate {
-                checkBox5.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/2/2/");
-            }); Thread.Sleep(10);
-            checkBox6.Invoke((MethodInvoker)delegate {
-                checkBox6.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/2/3/");
-            }); Thread.Sleep(10);
-            checkBox7.Invoke((MethodInvoker)delegate {
-                checkBox7.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/3/1/");
-            }); Thread.Sleep(10);
-            checkBox8.Invoke((MethodInvoker)delegate {
-                checkBox8.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/3/2/");
-            }); Thread.Sleep(10);
-            checkBox9.Invoke((MethodInvoker)delegate {
-                checkBox9.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/3/3/");
-            }); Thread.Sleep(10);
-            checkBox10.Invoke((MethodInvoker)delegate {
-                checkBox10.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/4/1/");
-            }); Thread.Sleep(10);
-            checkBox11.Invoke((MethodInvoker)delegate {
-                checkBox11.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/4/2/");
-            }); Thread.Sleep(10);
-            checkBox12.Invoke((MethodInvoker)delegate {
-                checkBox12.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/4/3/");
-            }); Thread.Sleep(10);
-            checkBox13.Invoke((MethodInvoker)delegate {
-                checkBox13.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/5/1/");
-            }); Thread.Sleep(10);
-            checkBox14.Invoke((MethodInvoker)delegate {
-                checkBox14.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/5/2/");
-            }); Thread.Sleep(10);
-            checkBox15.Invoke((MethodInvoker)delegate {
-                checkBox15.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/5/3/");
-            }); Thread.Sleep(10);
-            checkBox16.Invoke((MethodInvoker)delegate {
-                checkBox16.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/6/1/");
-            }); Thread.Sleep(10);
-            checkBox17.Invoke((MethodInvoker)delegate {
-                checkBox17.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/6/2/");
-            }); Thread.Sleep(10);
-            checkBox18.Invoke((MethodInvoker)delegate {
-                checkBox18.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/6/3/");
-            }); Thread.Sleep(10);
-            checkBox19.Invoke((MethodInvoker)delegate {
-                checkBox19.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/7/1/");
-            }); Thread.Sleep(10);
-            checkBox20.Invoke((MethodInvoker)delegate {
-                checkBox20.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/7/2/");
-            }); Thread.Sleep(10);
-            checkBox21.Invoke((MethodInvoker)delegate {
-                checkBox21.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/7/3/");
-            }); Thread.Sleep(10);
-            checkBox22.Invoke((MethodInvoker)delegate {
-                checkBox22.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/8/1/");
-            }); Thread.Sleep(10);
-            checkBox23.Invoke((MethodInvoker)delegate {
-                checkBox23.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/8/2/");
-            }); Thread.Sleep(10);
-            checkBox24.Invoke((MethodInvoker)delegate {
-                checkBox24.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/8/3/");
-            }); Thread.Sleep(10);
-            checkBox25.Invoke((MethodInvoker)delegate {
-                checkBox25.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/9/1/");
-            }); Thread.Sleep(10);
-            checkBox26.Invoke((MethodInvoker)delegate {
-                checkBox26.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/9/2/");
-            }); Thread.Sleep(10);
-            checkBox27.Invoke((MethodInvoker)delegate {
-                checkBox27.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/9/3/");
-            }); Thread.Sleep(10);
-            checkBox28.Invoke((MethodInvoker)delegate {
-                checkBox28.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/10/1/");
-            }); Thread.Sleep(100);
-            checkBox29.Invoke((MethodInvoker)delegate {
-                checkBox29.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/10/2/");
-            }); Thread.Sleep(10);
-            checkBox30.Invoke((MethodInvoker)delegate {
-                checkBox30.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/10/3/");
-            }); Thread.Sleep(10);
-            this.Refresh();
+                checkBox4.Invoke((MethodInvoker)delegate
+                {
+                    checkBox4.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/2/1/");
+                });
+                checkBox5.Invoke((MethodInvoker)delegate
+                {
+                    checkBox5.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/2/2/");
+                });
+                checkBox6.Invoke((MethodInvoker)delegate
+                {
+                    checkBox6.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/2/3/");
+                });
+                checkBox7.Invoke((MethodInvoker)delegate
+                {
+                    checkBox7.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/3/1/");
+                });
+                checkBox8.Invoke((MethodInvoker)delegate
+                {
+                    checkBox8.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/3/2/");
+                });
+                checkBox9.Invoke((MethodInvoker)delegate
+                {
+                    checkBox9.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/3/3/");
+                });
+                checkBox10.Invoke((MethodInvoker)delegate
+                {
+                    checkBox10.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/4/1/");
+                });
+                checkBox11.Invoke((MethodInvoker)delegate
+                {
+                    checkBox11.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/4/2/");
+                });
+                checkBox12.Invoke((MethodInvoker)delegate
+                {
+                    checkBox12.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/4/3/");
+                });
+                checkBox13.Invoke((MethodInvoker)delegate
+                {
+                    checkBox13.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/5/1/");
+                });
+                checkBox14.Invoke((MethodInvoker)delegate
+                {
+                    checkBox14.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/5/2/");
+                });
+                checkBox15.Invoke((MethodInvoker)delegate
+                {
+                    checkBox15.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/5/3/");
+                });
+                checkBox16.Invoke((MethodInvoker)delegate
+                {
+                    checkBox16.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/6/1/");
+                });
+                checkBox17.Invoke((MethodInvoker)delegate
+                {
+                    checkBox17.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/6/2/");
+                });
+                checkBox18.Invoke((MethodInvoker)delegate
+                {
+                    checkBox18.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/6/3/");
+                });
+                checkBox19.Invoke((MethodInvoker)delegate
+                {
+                    checkBox19.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/7/1/");
+                });
+                checkBox20.Invoke((MethodInvoker)delegate
+                {
+                    checkBox20.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/7/2/");
+                });
+                checkBox21.Invoke((MethodInvoker)delegate
+                {
+                    checkBox21.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/7/3/");
+                });
+                checkBox22.Invoke((MethodInvoker)delegate
+                {
+                    checkBox22.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/8/1/");
+                });
+                checkBox23.Invoke((MethodInvoker)delegate
+                {
+                    checkBox23.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/8/2/");
+                });
+                checkBox24.Invoke((MethodInvoker)delegate
+                {
+                    checkBox24.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/8/3/");
+                });
+                checkBox25.Invoke((MethodInvoker)delegate
+                {
+                    checkBox25.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/9/1/");
+                });
+                checkBox26.Invoke((MethodInvoker)delegate
+                {
+                    checkBox26.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/9/2/");
+                });
+                checkBox27.Invoke((MethodInvoker)delegate
+                {
+                    checkBox27.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/9/3/");
+                });
+                checkBox28.Invoke((MethodInvoker)delegate
+                {
+                    checkBox28.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/10/1/");
+                }); Thread.Sleep(100);
+                checkBox29.Invoke((MethodInvoker)delegate
+                {
+                    checkBox29.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/10/2/");
+                });
+                checkBox30.Invoke((MethodInvoker)delegate
+                {
+                    checkBox30.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/10/3/");
+                });
+                Thread.Sleep(14000);
+            }
         }
 #endregion
         #region Detect Select Answer
@@ -819,8 +862,8 @@ namespace Istoria_matematicii
                 dataGridView1.Rows[nr].Cells[0].Value = nr+1;
                 nr++;
             }
-
-            
+     
+      
         }
 
         private void textBox5_KeyPress(object sender, KeyPressEventArgs e)
@@ -906,13 +949,16 @@ namespace Istoria_matematicii
               " folosit o metodă geometrică de calcul a 35 de zecimale ale lui π. El a" + Environment.NewLine +
               " fost atât de mândru de calculul său, căruia i-a dedicat o mare parte" + Environment.NewLine +
               " din viața sa, încât a cerut ca cifrele să-i fie gravate pe piatra de mormânt.";
+           
             iTalk_HeaderLabel22.Text = "În aceeași perioadă, în Europa au început să apară metodele " + Environment.NewLine +
                 "analizei matematice și pentru determinarea seriilor și produselor" + Environment.NewLine +
                 " infinite pentru cantități geometrice. Prima astfel de reprezentare a" + Environment.NewLine +
                 " fost formula lui Viète";
+           
             iTalk_HeaderLabel25.Text = "■ Descoperit de John Wallis în 1655. Isaac Newton a calculat și el o serie pentru π și a" + Environment.NewLine +
                 " calculat 15 cifre, deși ulterior a mărturisit: „Mi-e rușine să vă spun la câte cifre am " + Environment.NewLine +
                 "ajuns cu calculele, neavând altceva de făcut atunci.”";
+           
             iTalk_HeaderLabel28.Text = "■ Apariția calculatoarelor numerice în secolul al XX-lea au dus la o creștere a recordurilor de" + Environment.NewLine +
                 " calcul al lui π. John von Neumann a folosit ENIAC pentru a calcula 2037 de cifre ale lui π în" + Environment.NewLine +
                 " 1949, un calcul care a durat 70 de ore.Alte mii de zecimale s-au obținut în următoarele decenii" + Environment.NewLine +
@@ -920,6 +966,7 @@ namespace Istoria_matematicii
                 " rapid, ci și apariției unor noi algoritmi. Una dintre cele mai semnificative realizări a fost" + Environment.NewLine +
                 " descoperirea transformatei Fourier rapide (FFT) în anii 1960, algoritm ce permite" + Environment.NewLine +
                 " calculatoarelor să efectueze rapid operațiuni aritmetice pe numere extrem de mari.";
+           
             iTalk_HeaderLabel30.Text = " ■ 1900-1650 i.Hr. Egiptenii si babilonienii au estimat pi ca fiind 3,1605, respectiv 3,125." + Environment.NewLine +
                 " ■ 287 i.Hr. S-a nascut matematicianul Arhimede din Siracuza. El a descoperit " + Environment.NewLine +
                 " legatura dintre aria cercului si circumferinta sa." + Environment.NewLine +
@@ -935,6 +982,7 @@ namespace Istoria_matematicii
                 " ■ 1761 Matematicianul germano-elvetian, Johann Heinrich Lambert, aduce prima " + Environment.NewLine +
                 " dovada stiintifica potrivit careia pi e numar irational." + Environment.NewLine +
                 " ■ 1794 Francezul Adrien-Marie Legendre dovedeste ca π2 e si el irational.";
+           
             iTalk_HeaderLabel31.Text = " ■ 1897 Fizicianul american Edward Johnston Goodwin incearca sa estimeze " + Environment.NewLine +
                 "cu precizie valoarea lui pi si sa o inregistreze, astfel incat sa-i fie platite " + Environment.NewLine +
                 "drepturi de autor. Ideea esueaza dupa ce opinia publica se revolta." + Environment.NewLine +
@@ -946,6 +994,7 @@ namespace Istoria_matematicii
                 "a 67.890 - a zecimala, stabilind un nou record mondial." + Environment.NewLine +
                 " ■ 2009 Congresul SUA recunoaste, in mod oficial, Ziua Nationala Pi,14" + Environment.NewLine +
                 "martie.";
+           
             iTalk_HeaderLabel33.Text = " – Pi este aproximat ca fractia 22/7." + Environment.NewLine +
                 " – Matematicianul britanic William Shanks (1812-1882) a aflat, in 15 ani, 707" + Environment.NewLine +
                 " zecimale ale lui pi. El a facut o eroare la zecimala 528, eroare care a fost detectata" + Environment.NewLine +
@@ -954,11 +1003,13 @@ namespace Istoria_matematicii
                 " electronice, memorarea unui număr record de cifre a devenit o obsesie a" + Environment.NewLine +
                 " unor oameni. În 2006, Akira Haraguchi, un inginer japonez pensionar, s-a" + Environment.NewLine +
                 " lăudat cu reținerea a 100.000 de zecimale exacte. ";
+           
             iTalk_HeaderLabel34.Text = " Aceasta nu a fost însă verificată de Guinness World Records." + Environment.NewLine +
                 " Recordul înregistrat de Guinness la memorarea cifrelor lui π este" + Environment.NewLine +
                 " de 67.890 de cifre, deținut de Lu Chao, un student de 24 de ani" + Environment.NewLine +
                 " din China.I-a luat 24 de ore și 4 minute să recite fără greșeală" + Environment.NewLine +
                 " până la a 67.890-a cifră zecimală a lui π.";
+           
             iTalk_HeaderLabel35.Text = " – De 90 de zile au avut nevoie Shigeru Kondo, un inginer de sistem din " + Environment.NewLine +
                 " Japonia, si Alexander Yee, un student la informatica din SUA, pentru" + Environment.NewLine +
                 " a  scrie, in 2010, 5.000 de miliarde de zecimale ale lui pi" + Environment.NewLine +
@@ -969,6 +1020,7 @@ namespace Istoria_matematicii
                 " memoria lor. Englezul Daniel Tammet a estimat ca i-au trebuit 14 zile" + Environment.NewLine +
                 " pentru a memora primele 22.514 zecimale ale lui pi. Le-a recitat la" + Environment.NewLine +
                 " Universitatea Oxford, pe 14 martie 2004. ";
+           
             iTalk_HeaderLabel36.Text = " ■ Există mai multe moduri de memorare a lui π, printre care și utilizarea de" + Environment.NewLine +
                 " „pieme”, poezii care reprezintă numărul π astfel încât lungimea fiecărui" + Environment.NewLine +
                 " cuvânt (în litere) reprezintă o cifră. Un astfel de exemplu de piemă, compus" + Environment.NewLine +
@@ -979,6 +1031,7 @@ namespace Istoria_matematicii
                 " există fraza: „Așa e bine a scrie renumitul și utilul număr”.Cadaeic Cadenza" + Environment.NewLine +
                 " conține în acest fel primele 3834 de cifre ale lui π.Piemele fac parte din" + Environment.NewLine +
                 " întregul domeniu de studiu al mnemotehnicilor pentru reținerea cifrelor lui π.";
+           
             iTalk_HeaderLabel37.Text = " ■ Poezia lui pi „Piemele“ sunt poeme inspirate de pi, in care lungimea fiecarui cuvant" + Environment.NewLine +
                 " (in litere) reprezinta o zecimala a lui pi. De exemplu: „Asa e bine a scrie renumitul si utilul" + Environment.NewLine +
                 " numar“. Versurile reprezinta numarul 3.14159265. Piemele au fost create pentru a" + Environment.NewLine +
@@ -998,6 +1051,101 @@ namespace Istoria_matematicii
                 "Cei ce vor temeinic asta pretui" + Environment.NewLine +
                 "" + Environment.NewLine +
                 "Ei vesnic bine vor trai!“";
+        }
+
+        private void iTalk_Button_13_Click(object sender, EventArgs e)
+        {
+            iTalk_TabControl1.SelectedIndex = 1;
+        }
+        private void iTalk_Button_16_Click(object sender, EventArgs e)
+        {
+            iTalk_TabControl1.SelectedIndex = 0;
+        }
+
+
+        private void iTalk_Button_14_Click(object sender, EventArgs e)
+        {
+            iTalk_TabControl1.SelectedIndex = 3;
+        }
+
+        private void iTalk_Button_15_Click(object sender, EventArgs e)
+        {
+            iTalk_TabControl1.SelectedIndex = 4;
+        }
+
+        private void iTalk_Button_17_Click(object sender, EventArgs e)
+        {
+            iTalk_TabControl1.SelectedIndex = 1;
+        }
+
+        private void next5_Click(object sender, EventArgs e)
+        {
+            iTalk_TabControl1.SelectedIndex = 5;
+        }
+
+        private void back3_Click(object sender, EventArgs e)
+        {
+            iTalk_TabControl1.SelectedIndex = 3;
+        }
+
+        private void back4_Click(object sender, EventArgs e)
+        {
+            iTalk_TabControl1.SelectedIndex = 4;
+        }
+
+        private void next6_Click(object sender, EventArgs e)
+        {
+            iTalk_TabControl1.SelectedIndex = 6;
+        }
+
+        private void back5_Click(object sender, EventArgs e)
+        {
+            iTalk_TabControl1.SelectedIndex = 5;
+        }
+
+        private void next7_Click(object sender, EventArgs e)
+        {
+            iTalk_TabControl1.SelectedIndex = 7;
+        }
+
+        private void next8_Click(object sender, EventArgs e)
+        {
+            iTalk_TabControl1.SelectedIndex = 8;
+        }
+
+        private void back6_Click(object sender, EventArgs e)
+        {
+            iTalk_TabControl1.SelectedIndex = 6;
+        }
+
+        private void back7_Click(object sender, EventArgs e)
+        {
+            iTalk_TabControl1.SelectedIndex = 7;
+        }
+
+        private void next9_Click(object sender, EventArgs e)
+        {
+            iTalk_TabControl1.SelectedIndex = 9;
+        }
+
+        private void next10_Click(object sender, EventArgs e)
+        {
+            iTalk_TabControl1.SelectedIndex = 10;
+        }
+
+        private void back8_Click(object sender, EventArgs e)
+        {
+            iTalk_TabControl1.SelectedIndex = 8;
+        }
+
+        private void back9_Click(object sender, EventArgs e)
+        {
+            iTalk_TabControl1.SelectedIndex = 9;
+        }
+
+        private void next12_Click(object sender, EventArgs e)
+        {
+            iTalk_TabControl1.SelectedIndex = 12;
         }
 
         private void iTalk_Button_24_Click(object sender, EventArgs e)

@@ -35,6 +35,7 @@
             this.iTalk_ThemeContainer1 = new iTalk.iTalk_ThemeContainer();
             this.iTalk_TabControl1 = new iTalk.iTalk_TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.iTalk_Button_13 = new iTalk.iTalk_Button_1();
             this.iTalk_HeaderLabel7 = new iTalk.iTalk_HeaderLabel();
             this.iTalk_HeaderLabel6 = new iTalk.iTalk_HeaderLabel();
             this.iTalk_HeaderLabel5 = new iTalk.iTalk_HeaderLabel();
@@ -44,6 +45,8 @@
             this.iTalk_HeaderLabel1 = new iTalk.iTalk_HeaderLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.iTalk_Button_16 = new iTalk.iTalk_Button_1();
+            this.iTalk_Button_14 = new iTalk.iTalk_Button_1();
             this.iTalk_HeaderLabel19 = new iTalk.iTalk_HeaderLabel();
             this.iTalk_HeaderLabel18 = new iTalk.iTalk_HeaderLabel();
             this.iTalk_HeaderLabel17 = new iTalk.iTalk_HeaderLabel();
@@ -69,12 +72,16 @@
             this.iTalk_HeaderLabel49 = new iTalk.iTalk_HeaderLabel();
             this.iTalk_HeaderLabel48 = new iTalk.iTalk_HeaderLabel();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.back2 = new iTalk.iTalk_Button_1();
+            this.next4 = new iTalk.iTalk_Button_1();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.iTalk_HeaderLabel23 = new iTalk.iTalk_HeaderLabel();
             this.iTalk_HeaderLabel22 = new iTalk.iTalk_HeaderLabel();
             this.iTalk_HeaderLabel21 = new iTalk.iTalk_HeaderLabel();
             this.iTalk_HeaderLabel20 = new iTalk.iTalk_HeaderLabel();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.back3 = new iTalk.iTalk_Button_1();
+            this.next5 = new iTalk.iTalk_Button_1();
             this.iTalk_HeaderLabel28 = new iTalk.iTalk_HeaderLabel();
             this.iTalk_HeaderLabel27 = new iTalk.iTalk_HeaderLabel();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -83,22 +90,32 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.iTalk_HeaderLabel24 = new iTalk.iTalk_HeaderLabel();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.back4 = new iTalk.iTalk_Button_1();
+            this.next6 = new iTalk.iTalk_Button_1();
             this.iTalk_HeaderLabel30 = new iTalk.iTalk_HeaderLabel();
             this.iTalk_HeaderLabel29 = new iTalk.iTalk_HeaderLabel();
             this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.back5 = new iTalk.iTalk_Button_1();
+            this.next7 = new iTalk.iTalk_Button_1();
             this.iTalk_HeaderLabel31 = new iTalk.iTalk_HeaderLabel();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.back6 = new iTalk.iTalk_Button_1();
+            this.next8 = new iTalk.iTalk_Button_1();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.iTalk_HeaderLabel34 = new iTalk.iTalk_HeaderLabel();
             this.iTalk_HeaderLabel33 = new iTalk.iTalk_HeaderLabel();
             this.iTalk_HeaderLabel32 = new iTalk.iTalk_HeaderLabel();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.tabPage8 = new System.Windows.Forms.TabPage();
+            this.back7 = new iTalk.iTalk_Button_1();
+            this.next9 = new iTalk.iTalk_Button_1();
             this.iTalk_HeaderLabel35 = new iTalk.iTalk_HeaderLabel();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.tabPage9 = new System.Windows.Forms.TabPage();
+            this.back8 = new iTalk.iTalk_Button_1();
+            this.next10 = new iTalk.iTalk_Button_1();
             this.iTalk_HeaderLabel37 = new iTalk.iTalk_HeaderLabel();
             this.iTalk_HeaderLabel36 = new iTalk.iTalk_HeaderLabel();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
@@ -189,6 +206,8 @@
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
             this.backgroundWorker3 = new System.ComponentModel.BackgroundWorker();
+            this.back9 = new iTalk.iTalk_Button_1();
+            this.next12 = new iTalk.iTalk_Button_1();
             this.iTalk_ThemeContainer1.SuspendLayout();
             this.iTalk_TabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -285,6 +304,7 @@
             this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
             this.tabPage1.BackgroundImage = global::Istoria_matematicii.Properties.Resources.master242_image003;
             this.tabPage1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.tabPage1.Controls.Add(this.iTalk_Button_13);
             this.tabPage1.Controls.Add(this.iTalk_HeaderLabel7);
             this.tabPage1.Controls.Add(this.iTalk_HeaderLabel6);
             this.tabPage1.Controls.Add(this.iTalk_HeaderLabel5);
@@ -300,6 +320,20 @@
             this.tabPage1.Size = new System.Drawing.Size(1013, 670);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Lesson 1";
+            // 
+            // iTalk_Button_13
+            // 
+            this.iTalk_Button_13.BackColor = System.Drawing.Color.Transparent;
+            this.iTalk_Button_13.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.iTalk_Button_13.Image = null;
+            this.iTalk_Button_13.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iTalk_Button_13.Location = new System.Drawing.Point(907, 632);
+            this.iTalk_Button_13.Name = "iTalk_Button_13";
+            this.iTalk_Button_13.Size = new System.Drawing.Size(103, 35);
+            this.iTalk_Button_13.TabIndex = 8;
+            this.iTalk_Button_13.Text = "Next";
+            this.iTalk_Button_13.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.iTalk_Button_13.Click += new System.EventHandler(this.iTalk_Button_13_Click);
             // 
             // iTalk_HeaderLabel7
             // 
@@ -400,6 +434,8 @@
             this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
             this.tabPage2.BackgroundImage = global::Istoria_matematicii.Properties.Resources.Untitled;
             this.tabPage2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.tabPage2.Controls.Add(this.iTalk_Button_16);
+            this.tabPage2.Controls.Add(this.iTalk_Button_14);
             this.tabPage2.Controls.Add(this.iTalk_HeaderLabel19);
             this.tabPage2.Controls.Add(this.iTalk_HeaderLabel18);
             this.tabPage2.Controls.Add(this.iTalk_HeaderLabel17);
@@ -419,6 +455,34 @@
             this.tabPage2.Size = new System.Drawing.Size(1013, 670);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Lesson 2";
+            // 
+            // iTalk_Button_16
+            // 
+            this.iTalk_Button_16.BackColor = System.Drawing.Color.Transparent;
+            this.iTalk_Button_16.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.iTalk_Button_16.Image = null;
+            this.iTalk_Button_16.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iTalk_Button_16.Location = new System.Drawing.Point(794, 629);
+            this.iTalk_Button_16.Name = "iTalk_Button_16";
+            this.iTalk_Button_16.Size = new System.Drawing.Size(103, 35);
+            this.iTalk_Button_16.TabIndex = 14;
+            this.iTalk_Button_16.Text = "Back";
+            this.iTalk_Button_16.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.iTalk_Button_16.Click += new System.EventHandler(this.iTalk_Button_16_Click);
+            // 
+            // iTalk_Button_14
+            // 
+            this.iTalk_Button_14.BackColor = System.Drawing.Color.Transparent;
+            this.iTalk_Button_14.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.iTalk_Button_14.Image = null;
+            this.iTalk_Button_14.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iTalk_Button_14.Location = new System.Drawing.Point(904, 629);
+            this.iTalk_Button_14.Name = "iTalk_Button_14";
+            this.iTalk_Button_14.Size = new System.Drawing.Size(103, 35);
+            this.iTalk_Button_14.TabIndex = 13;
+            this.iTalk_Button_14.Text = "Next";
+            this.iTalk_Button_14.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.iTalk_Button_14.Click += new System.EventHandler(this.iTalk_Button_14_Click);
             // 
             // iTalk_HeaderLabel19
             // 
@@ -716,6 +780,8 @@
             this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
             this.tabPage3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage3.BackgroundImage")));
             this.tabPage3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.tabPage3.Controls.Add(this.back2);
+            this.tabPage3.Controls.Add(this.next4);
             this.tabPage3.Controls.Add(this.pictureBox4);
             this.tabPage3.Controls.Add(this.iTalk_HeaderLabel23);
             this.tabPage3.Controls.Add(this.iTalk_HeaderLabel22);
@@ -727,6 +793,34 @@
             this.tabPage3.Size = new System.Drawing.Size(1013, 670);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Lesson 3";
+            // 
+            // back2
+            // 
+            this.back2.BackColor = System.Drawing.Color.Transparent;
+            this.back2.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.back2.Image = null;
+            this.back2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.back2.Location = new System.Drawing.Point(795, 629);
+            this.back2.Name = "back2";
+            this.back2.Size = new System.Drawing.Size(103, 35);
+            this.back2.TabIndex = 10;
+            this.back2.Text = "Back";
+            this.back2.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.back2.Click += new System.EventHandler(this.iTalk_Button_17_Click);
+            // 
+            // next4
+            // 
+            this.next4.BackColor = System.Drawing.Color.Transparent;
+            this.next4.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.next4.Image = null;
+            this.next4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.next4.Location = new System.Drawing.Point(904, 629);
+            this.next4.Name = "next4";
+            this.next4.Size = new System.Drawing.Size(103, 35);
+            this.next4.TabIndex = 9;
+            this.next4.Text = "Next";
+            this.next4.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.next4.Click += new System.EventHandler(this.iTalk_Button_15_Click);
             // 
             // pictureBox4
             // 
@@ -786,6 +880,8 @@
             this.tabPage4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
             this.tabPage4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage4.BackgroundImage")));
             this.tabPage4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.tabPage4.Controls.Add(this.back3);
+            this.tabPage4.Controls.Add(this.next5);
             this.tabPage4.Controls.Add(this.iTalk_HeaderLabel28);
             this.tabPage4.Controls.Add(this.iTalk_HeaderLabel27);
             this.tabPage4.Controls.Add(this.pictureBox5);
@@ -799,6 +895,34 @@
             this.tabPage4.Size = new System.Drawing.Size(1013, 670);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Lesson 4";
+            // 
+            // back3
+            // 
+            this.back3.BackColor = System.Drawing.Color.Transparent;
+            this.back3.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.back3.Image = null;
+            this.back3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.back3.Location = new System.Drawing.Point(904, 588);
+            this.back3.Name = "back3";
+            this.back3.Size = new System.Drawing.Size(103, 35);
+            this.back3.TabIndex = 12;
+            this.back3.Text = "Back";
+            this.back3.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.back3.Click += new System.EventHandler(this.back3_Click);
+            // 
+            // next5
+            // 
+            this.next5.BackColor = System.Drawing.Color.Transparent;
+            this.next5.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.next5.Image = null;
+            this.next5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.next5.Location = new System.Drawing.Point(904, 629);
+            this.next5.Name = "next5";
+            this.next5.Size = new System.Drawing.Size(103, 35);
+            this.next5.TabIndex = 11;
+            this.next5.Text = "Next";
+            this.next5.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.next5.Click += new System.EventHandler(this.next5_Click);
             // 
             // iTalk_HeaderLabel28
             // 
@@ -883,6 +1007,8 @@
             this.tabPage5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
             this.tabPage5.BackgroundImage = global::Istoria_matematicii.Properties.Resources.Untitled;
             this.tabPage5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.tabPage5.Controls.Add(this.back4);
+            this.tabPage5.Controls.Add(this.next6);
             this.tabPage5.Controls.Add(this.iTalk_HeaderLabel30);
             this.tabPage5.Controls.Add(this.iTalk_HeaderLabel29);
             this.tabPage5.Location = new System.Drawing.Point(139, 4);
@@ -891,6 +1017,34 @@
             this.tabPage5.Size = new System.Drawing.Size(1013, 670);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Lesson 5";
+            // 
+            // back4
+            // 
+            this.back4.BackColor = System.Drawing.Color.Transparent;
+            this.back4.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.back4.Image = null;
+            this.back4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.back4.Location = new System.Drawing.Point(904, 588);
+            this.back4.Name = "back4";
+            this.back4.Size = new System.Drawing.Size(103, 35);
+            this.back4.TabIndex = 14;
+            this.back4.Text = "Back";
+            this.back4.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.back4.Click += new System.EventHandler(this.back4_Click);
+            // 
+            // next6
+            // 
+            this.next6.BackColor = System.Drawing.Color.Transparent;
+            this.next6.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.next6.Image = null;
+            this.next6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.next6.Location = new System.Drawing.Point(904, 629);
+            this.next6.Name = "next6";
+            this.next6.Size = new System.Drawing.Size(103, 35);
+            this.next6.TabIndex = 13;
+            this.next6.Text = "Next";
+            this.next6.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.next6.Click += new System.EventHandler(this.next6_Click);
             // 
             // iTalk_HeaderLabel30
             // 
@@ -920,6 +1074,8 @@
             this.tabPage6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
             this.tabPage6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage6.BackgroundImage")));
             this.tabPage6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.tabPage6.Controls.Add(this.back5);
+            this.tabPage6.Controls.Add(this.next7);
             this.tabPage6.Controls.Add(this.iTalk_HeaderLabel31);
             this.tabPage6.Controls.Add(this.pictureBox7);
             this.tabPage6.Controls.Add(this.pictureBox6);
@@ -929,6 +1085,34 @@
             this.tabPage6.Size = new System.Drawing.Size(1013, 670);
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "Lesson 6";
+            // 
+            // back5
+            // 
+            this.back5.BackColor = System.Drawing.Color.Transparent;
+            this.back5.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.back5.Image = null;
+            this.back5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.back5.Location = new System.Drawing.Point(637, 629);
+            this.back5.Name = "back5";
+            this.back5.Size = new System.Drawing.Size(103, 35);
+            this.back5.TabIndex = 16;
+            this.back5.Text = "Back";
+            this.back5.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.back5.Click += new System.EventHandler(this.back5_Click);
+            // 
+            // next7
+            // 
+            this.next7.BackColor = System.Drawing.Color.Transparent;
+            this.next7.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.next7.Image = null;
+            this.next7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.next7.Location = new System.Drawing.Point(746, 629);
+            this.next7.Name = "next7";
+            this.next7.Size = new System.Drawing.Size(103, 35);
+            this.next7.TabIndex = 15;
+            this.next7.Text = "Next";
+            this.next7.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.next7.Click += new System.EventHandler(this.next7_Click);
             // 
             // iTalk_HeaderLabel31
             // 
@@ -965,6 +1149,8 @@
             // 
             this.tabPage7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
             this.tabPage7.BackgroundImage = global::Istoria_matematicii.Properties.Resources.master242_image003;
+            this.tabPage7.Controls.Add(this.back6);
+            this.tabPage7.Controls.Add(this.next8);
             this.tabPage7.Controls.Add(this.pictureBox8);
             this.tabPage7.Controls.Add(this.iTalk_HeaderLabel34);
             this.tabPage7.Controls.Add(this.iTalk_HeaderLabel33);
@@ -976,6 +1162,34 @@
             this.tabPage7.Size = new System.Drawing.Size(1013, 670);
             this.tabPage7.TabIndex = 6;
             this.tabPage7.Text = "Lesson 7";
+            // 
+            // back6
+            // 
+            this.back6.BackColor = System.Drawing.Color.Transparent;
+            this.back6.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.back6.Image = null;
+            this.back6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.back6.Location = new System.Drawing.Point(414, 632);
+            this.back6.Name = "back6";
+            this.back6.Size = new System.Drawing.Size(103, 35);
+            this.back6.TabIndex = 18;
+            this.back6.Text = "Back";
+            this.back6.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.back6.Click += new System.EventHandler(this.back6_Click);
+            // 
+            // next8
+            // 
+            this.next8.BackColor = System.Drawing.Color.Transparent;
+            this.next8.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.next8.Image = null;
+            this.next8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.next8.Location = new System.Drawing.Point(523, 632);
+            this.next8.Name = "next8";
+            this.next8.Size = new System.Drawing.Size(103, 35);
+            this.next8.TabIndex = 17;
+            this.next8.Text = "Next";
+            this.next8.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.next8.Click += new System.EventHandler(this.next8_Click);
             // 
             // pictureBox8
             // 
@@ -1036,6 +1250,8 @@
             this.tabPage8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
             this.tabPage8.BackgroundImage = global::Istoria_matematicii.Properties.Resources.Untitled;
             this.tabPage8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.tabPage8.Controls.Add(this.back7);
+            this.tabPage8.Controls.Add(this.next9);
             this.tabPage8.Controls.Add(this.iTalk_HeaderLabel35);
             this.tabPage8.Controls.Add(this.pictureBox10);
             this.tabPage8.Location = new System.Drawing.Point(139, 4);
@@ -1044,6 +1260,34 @@
             this.tabPage8.Size = new System.Drawing.Size(1013, 670);
             this.tabPage8.TabIndex = 7;
             this.tabPage8.Text = "Lesson 8";
+            // 
+            // back7
+            // 
+            this.back7.BackColor = System.Drawing.Color.Transparent;
+            this.back7.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.back7.Image = null;
+            this.back7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.back7.Location = new System.Drawing.Point(904, 588);
+            this.back7.Name = "back7";
+            this.back7.Size = new System.Drawing.Size(103, 35);
+            this.back7.TabIndex = 20;
+            this.back7.Text = "Back";
+            this.back7.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.back7.Click += new System.EventHandler(this.back7_Click);
+            // 
+            // next9
+            // 
+            this.next9.BackColor = System.Drawing.Color.Transparent;
+            this.next9.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.next9.Image = null;
+            this.next9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.next9.Location = new System.Drawing.Point(904, 629);
+            this.next9.Name = "next9";
+            this.next9.Size = new System.Drawing.Size(103, 35);
+            this.next9.TabIndex = 19;
+            this.next9.Text = "Next";
+            this.next9.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.next9.Click += new System.EventHandler(this.next9_Click);
             // 
             // iTalk_HeaderLabel35
             // 
@@ -1071,6 +1315,8 @@
             this.tabPage9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
             this.tabPage9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage9.BackgroundImage")));
             this.tabPage9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.tabPage9.Controls.Add(this.back8);
+            this.tabPage9.Controls.Add(this.next10);
             this.tabPage9.Controls.Add(this.iTalk_HeaderLabel37);
             this.tabPage9.Controls.Add(this.iTalk_HeaderLabel36);
             this.tabPage9.Controls.Add(this.pictureBox12);
@@ -1081,6 +1327,34 @@
             this.tabPage9.Size = new System.Drawing.Size(1013, 670);
             this.tabPage9.TabIndex = 8;
             this.tabPage9.Text = "Lesson 9";
+            // 
+            // back8
+            // 
+            this.back8.BackColor = System.Drawing.Color.Transparent;
+            this.back8.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.back8.Image = null;
+            this.back8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.back8.Location = new System.Drawing.Point(905, 591);
+            this.back8.Name = "back8";
+            this.back8.Size = new System.Drawing.Size(103, 35);
+            this.back8.TabIndex = 22;
+            this.back8.Text = "Back";
+            this.back8.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.back8.Click += new System.EventHandler(this.back8_Click);
+            // 
+            // next10
+            // 
+            this.next10.BackColor = System.Drawing.Color.Transparent;
+            this.next10.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.next10.Image = null;
+            this.next10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.next10.Location = new System.Drawing.Point(905, 632);
+            this.next10.Name = "next10";
+            this.next10.Size = new System.Drawing.Size(103, 35);
+            this.next10.TabIndex = 21;
+            this.next10.Text = "Next";
+            this.next10.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.next10.Click += new System.EventHandler(this.next10_Click);
             // 
             // iTalk_HeaderLabel37
             // 
@@ -1129,6 +1403,8 @@
             this.tabPage10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
             this.tabPage10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage10.BackgroundImage")));
             this.tabPage10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.tabPage10.Controls.Add(this.back9);
+            this.tabPage10.Controls.Add(this.next12);
             this.tabPage10.Controls.Add(this.iTalk_HeaderLabel39);
             this.tabPage10.Controls.Add(this.iTalk_HeaderLabel38);
             this.tabPage10.Controls.Add(this.pictureBox13);
@@ -2130,6 +2406,34 @@
             // 
             this.backgroundWorker3.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker3_DoWork);
             // 
+            // back9
+            // 
+            this.back9.BackColor = System.Drawing.Color.Transparent;
+            this.back9.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.back9.Image = null;
+            this.back9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.back9.Location = new System.Drawing.Point(795, 629);
+            this.back9.Name = "back9";
+            this.back9.Size = new System.Drawing.Size(103, 35);
+            this.back9.TabIndex = 18;
+            this.back9.Text = "Back";
+            this.back9.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.back9.Click += new System.EventHandler(this.back9_Click);
+            // 
+            // next12
+            // 
+            this.next12.BackColor = System.Drawing.Color.Transparent;
+            this.next12.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.next12.Image = null;
+            this.next12.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.next12.Location = new System.Drawing.Point(904, 629);
+            this.next12.Name = "next12";
+            this.next12.Size = new System.Drawing.Size(103, 35);
+            this.next12.TabIndex = 17;
+            this.next12.Text = "Finish";
+            this.next12.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.next12.Click += new System.EventHandler(this.next12_Click);
+            // 
             // PI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2360,6 +2664,25 @@
         private System.ComponentModel.BackgroundWorker backgroundWorker2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Col;
         private System.ComponentModel.BackgroundWorker backgroundWorker3;
+        private iTalk.iTalk_Button_1 iTalk_Button_13;
+        private iTalk.iTalk_Button_1 iTalk_Button_14;
+        private iTalk.iTalk_Button_1 next4;
+        private iTalk.iTalk_Button_1 iTalk_Button_16;
+        private iTalk.iTalk_Button_1 back2;
+        private iTalk.iTalk_Button_1 back3;
+        private iTalk.iTalk_Button_1 next5;
+        private iTalk.iTalk_Button_1 back4;
+        private iTalk.iTalk_Button_1 next6;
+        private iTalk.iTalk_Button_1 back5;
+        private iTalk.iTalk_Button_1 next7;
+        private iTalk.iTalk_Button_1 back6;
+        private iTalk.iTalk_Button_1 next8;
+        private iTalk.iTalk_Button_1 back7;
+        private iTalk.iTalk_Button_1 next9;
+        private iTalk.iTalk_Button_1 back8;
+        private iTalk.iTalk_Button_1 next10;
+        private iTalk.iTalk_Button_1 back9;
+        private iTalk.iTalk_Button_1 next12;
     }
 }
 
