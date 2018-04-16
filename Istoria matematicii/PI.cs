@@ -48,115 +48,17 @@ namespace Istoria_matematicii
         public PI()
         {
             InitializeComponent();
-            var result = JsonConvert.DeserializeObject<List<JsonResult>>(DownloadString("http://optimised.biz/clasament"));
+            var result = JsonConvert.DeserializeObject<List<JsonResult>>(DownloadString("http://pi.optimised.biz/clasament"));
             dataGridView1.DataSource = result;
             timer2.Interval = 2000;
             timer2.Start();
             timer1.Interval=1000;
             timer1.Start();
-            iTalk_HeaderLabel21.Text =
-                "■ Prima contribuție europeană majoră de după Arhimede a fost cea a " + Environment.NewLine +
-                " matematicianului german Ludolph van Ceulen (1540–1610), care a " + Environment.NewLine +
-                " folosit o metodă geometrică de calcul a 35 de zecimale ale lui π. El a" + Environment.NewLine +
-                " fost atât de mândru de calculul său, căruia i-a dedicat o mare parte" + Environment.NewLine +
-                " din viața sa, încât a cerut ca cifrele să-i fie gravate pe piatra de mormânt.";
-            iTalk_HeaderLabel22.Text = "În aceeași perioadă, în Europa au început să apară metodele " + Environment.NewLine +
-                "analizei matematice și pentru determinarea seriilor și produselor" + Environment.NewLine +
-                " infinite pentru cantități geometrice. Prima astfel de reprezentare a" + Environment.NewLine +
-                " fost formula lui Viète";
-            iTalk_HeaderLabel25.Text = "■ Descoperit de John Wallis în 1655. Isaac Newton a calculat și el o serie pentru π și a" + Environment.NewLine +
-                " calculat 15 cifre, deși ulterior a mărturisit: „Mi-e rușine să vă spun la câte cifre am " + Environment.NewLine +
-                "ajuns cu calculele, neavând altceva de făcut atunci.”";
-            iTalk_HeaderLabel28.Text = "■ Apariția calculatoarelor numerice în secolul al XX-lea au dus la o creștere a recordurilor de" + Environment.NewLine +
-                " calcul al lui π. John von Neumann a folosit ENIAC pentru a calcula 2037 de cifre ale lui π în" + Environment.NewLine +
-                " 1949, un calcul care a durat 70 de ore.Alte mii de zecimale s-au obținut în următoarele decenii" + Environment.NewLine +
-                " și milionul de cifre a fost depășit în 1973. Progresele nu s-au datorat doar hardware-ului mai" + Environment.NewLine +
-                " rapid, ci și apariției unor noi algoritmi. Una dintre cele mai semnificative realizări a fost" + Environment.NewLine +
-                " descoperirea transformatei Fourier rapide (FFT) în anii 1960, algoritm ce permite" + Environment.NewLine +
-                " calculatoarelor să efectueze rapid operațiuni aritmetice pe numere extrem de mari.";
-            iTalk_HeaderLabel30.Text = " ■ 1900-1650 i.Hr. Egiptenii si babilonienii au estimat pi ca fiind 3,1605, respectiv 3,125." + Environment.NewLine +
-                " ■ 287 i.Hr. S-a nascut matematicianul Arhimede din Siracuza. El a descoperit " + Environment.NewLine +
-                " legatura dintre aria cercului si circumferinta sa." + Environment.NewLine +
-                " ■ 429 S-a nascut astronomul si matematicianul chinez Zu Chongzhi. El l-a estimat pe " + Environment.NewLine +
-                " pi ca fiind 355/113,ceea ce ramane cea mai buna aproximare pentru urmatorii 1.000 " + Environment.NewLine +
-                " de ani. " + Environment.NewLine +
-                " ■ 1579 Francezul François Viete il calculeaza pe pi pana la a noua zecimala." + Environment.NewLine +
-                " ■ 1610 Ludolph van Ceulen, din Germania, calculeaza pi pana la a 35-a zecimala. " + Environment.NewLine +
-                " Moare in acelasi an si are valoarea lui pi gravata pe piatra sa de mormant." + Environment.NewLine +
-                " ■ 1706 Simbolul lui pi (π) este folosit pentru prima data de matematicianul galez " + Environment.NewLine +
-                " William Jones, pentru a reprezenta raportul dintre circumferinta unui cerc si " + Environment.NewLine +
-                " diametrul sau. " + Environment.NewLine +
-                " ■ 1761 Matematicianul germano-elvetian, Johann Heinrich Lambert, aduce prima " + Environment.NewLine +
-                " dovada stiintifica potrivit careia pi e numar irational." + Environment.NewLine +
-                " ■ 1794 Francezul Adrien-Marie Legendre dovedeste ca π2 e si el irational.";
-            iTalk_HeaderLabel31.Text = " ■ 1897 Fizicianul american Edward Johnston Goodwin incearca sa estimeze " + Environment.NewLine +
-                "cu precizie valoarea lui pi si sa o inregistreze, astfel incat sa-i fie platite " + Environment.NewLine +
-                "drepturi de autor. Ideea esueaza dupa ce opinia publica se revolta." + Environment.NewLine +
-                " ■ 1937 Tavanul Salii 31 a Palatului Découverte din Paris este decorat cu " + Environment.NewLine +
-                "zecimalele lui pi.A 528 - a zecimala este gresita si va fi corectata in 1949." + Environment.NewLine +
-                " ■1988 Se celebreaza, pentru prima data, Ziua Pi, pe 14 martie, in San " + Environment.NewLine +
-                "Francisco." + Environment.NewLine +
-                " ■ 2005 Studentul chinez Chao Lu il recita pe pi din memorie pana la" + Environment.NewLine +
-                "a 67.890 - a zecimala, stabilind un nou record mondial." + Environment.NewLine +
-                " ■ 2009 Congresul SUA recunoaste, in mod oficial, Ziua Nationala Pi,14" + Environment.NewLine +
-                "martie.";
-            iTalk_HeaderLabel33.Text = " – Pi este aproximat ca fractia 22/7." + Environment.NewLine +
-                " – Matematicianul britanic William Shanks (1812-1882) a aflat, in 15 ani, 707" + Environment.NewLine +
-                " zecimale ale lui pi. El a facut o eroare la zecimala 528, eroare care a fost detectata" + Environment.NewLine +
-                " abia in 1945." + Environment.NewLine +
-                " Chiar cu mult timp înainte ca valoarea lui π să fie evaluată de calculatoarele" + Environment.NewLine +
-                " electronice, memorarea unui număr record de cifre a devenit o obsesie a" + Environment.NewLine +
-                " unor oameni. În 2006, Akira Haraguchi, un inginer japonez pensionar, s-a" + Environment.NewLine +
-                " lăudat cu reținerea a 100.000 de zecimale exacte. ";
-            iTalk_HeaderLabel34.Text= " Aceasta nu a fost însă verificată de Guinness World Records." + Environment.NewLine +
-                " Recordul înregistrat de Guinness la memorarea cifrelor lui π este" + Environment.NewLine +
-                " de 67.890 de cifre, deținut de Lu Chao, un student de 24 de ani" + Environment.NewLine +
-                " din China.I-a luat 24 de ore și 4 minute să recite fără greșeală" + Environment.NewLine +
-                " până la a 67.890-a cifră zecimală a lui π.";
-            iTalk_HeaderLabel35.Text = " – De 90 de zile au avut nevoie Shigeru Kondo, un inginer de sistem din " + Environment.NewLine +
-                " Japonia, si Alexander Yee, un student la informatica din SUA, pentru" + Environment.NewLine +
-                " a  scrie, in 2010, 5.000 de miliarde de zecimale ale lui pi" + Environment.NewLine +
-                " pe ecranul unui singur computer." + Environment.NewLine +
-                " – In primul milion al zecimalelor lui pi, numarul 5 apare cel mai des," + Environment.NewLine +
-                " 100.359 de aparitii." + Environment.NewLine +
-                " – Cei care memoreaza numarul pi adauga, zilnic, 10 sau 15 zecimale in" + Environment.NewLine +
-                " memoria lor. Englezul Daniel Tammet a estimat ca i-au trebuit 14 zile" + Environment.NewLine +
-                " pentru a memora primele 22.514 zecimale ale lui pi. Le-a recitat la" + Environment.NewLine +
-                " Universitatea Oxford, pe 14 martie 2004. ";
-            iTalk_HeaderLabel36.Text = " ■ Există mai multe moduri de memorare a lui π, printre care și utilizarea de" + Environment.NewLine +
-                " „pieme”, poezii care reprezintă numărul π astfel încât lungimea fiecărui" + Environment.NewLine +
-                " cuvânt (în litere) reprezintă o cifră. Un astfel de exemplu de piemă, compus" + Environment.NewLine +
-                " de Sir James Jeans: How I need (sau: want) a drink, alcoholic in nature" + Environment.NewLine +
-                " (sau: of course), after the heavy lectures (sau: chapters) involving quantum" + Environment.NewLine +
-                " mechanics.Primul cuvânt are 3 litere, al doilea are una, al treilea are 4, al" + Environment.NewLine +
-                " patrulea 1, al cincilea 5, și așa mai departe. Echivalent, în limba română" + Environment.NewLine +
-                " există fraza: „Așa e bine a scrie renumitul și utilul număr”.Cadaeic Cadenza" + Environment.NewLine +
-                " conține în acest fel primele 3834 de cifre ale lui π.Piemele fac parte din" + Environment.NewLine +
-                " întregul domeniu de studiu al mnemotehnicilor pentru reținerea cifrelor lui π.";
-            iTalk_HeaderLabel37.Text = " ■ Poezia lui pi „Piemele“ sunt poeme inspirate de pi, in care lungimea fiecarui cuvant" + Environment.NewLine +
-                " (in litere) reprezinta o zecimala a lui pi. De exemplu: „Asa e bine a scrie renumitul si utilul" + Environment.NewLine +
-                " numar“. Versurile reprezinta numarul 3.14159265. Piemele au fost create pentru a" + Environment.NewLine +
-                " ajuta oamenii sa retina zecimalele lui pi. Acum exista chiar carti de pieme cu" + Environment.NewLine +
-                " 10.000 de cuvinte. Pingleza, o varianta a limbii engleze, urmeaza aceeasi regula in" + Environment.NewLine +
-                " povestiri scurte, puzzle-uri si piese de teatru. ";
-            iTalk_HeaderLabel38.Text = " In limba romana performanata de a creea un poem" + Environment.NewLine +
-                " pentru a putea memora zecimalele numarului pi" + Environment.NewLine +
-                " este de 25 de zecimale, data de urmatoarea" + Environment.NewLine +
-                " poezie: ";
-            iTalk_HeaderLabel39.Text = "“Dar o stim e numar important ce trebuie iubit" + Environment.NewLine +
-                "" + Environment.NewLine +
-                "Din toate numerele insemnate diamant" + Environment.NewLine +
-                "" + Environment.NewLine +
-                "neasemuit" + Environment.NewLine +
-                "" + Environment.NewLine +
-                "Cei ce vor temeinic asta pretui" + Environment.NewLine +
-                "" + Environment.NewLine +
-                "Ei vesnic bine vor trai!“";
-            //iTalk_HeaderLabel43.Text = " Pentru a te juca cu un cerc ai nevoie" + Environment.NewLine +
-            //    " de cele de mai jos. In partea din stanga in functiie" + Environment.NewLine +
-            //    " de parametrii adaugati programul o sa deseneze" + Environment.NewLine +
-            //    " un cerc cu aproximarile dimensiunilor introduse";
-            
+            if(!backgroundWorker3.IsBusy)
+            {
+                backgroundWorker3.RunWorkerAsync();
+            }
+   
         }
 #endregion
         #region Optimizare App
@@ -430,7 +332,7 @@ namespace Istoria_matematicii
             }
             else
             {
-                MessageBox.Show(DownloadString("http://optimised.biz/score/" + Parola + "/" + Username + "/" + Rs1 + "/" + Rs2 + "/" + Rs3 + "/" + Rs4 + "/" + Rs5 + "/" + Rs6 + "/" + Rs7 + "/" + Rs8 + "/" + Rs9 + "/" + Rs10));
+                MessageBox.Show(DownloadString("http://pi.optimised.biz/score/" + Parola + "/" + Username + "/" + Rs1 + "/" + Rs2 + "/" + Rs3 + "/" + Rs4 + "/" + Rs5 + "/" + Rs6 + "/" + Rs7 + "/" + Rs8 + "/" + Rs9 + "/" + Rs10));
             }
         }
         #endregion
@@ -438,129 +340,129 @@ namespace Istoria_matematicii
         private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
         {
             intrebare1.Invoke((MethodInvoker)delegate {
-                intrebare1.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/1/0");
+                intrebare1.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/1/0");
             });
             Thread.Sleep(10);
             intrebare2.Invoke((MethodInvoker)delegate {
-                intrebare2.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/2/0");
+                intrebare2.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/2/0");
             });
             Thread.Sleep(10);
             intrebare3.Invoke((MethodInvoker)delegate {
-                intrebare3.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/3/0");
+                intrebare3.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/3/0");
             }); Thread.Sleep(10);
             intrebare4.Invoke((MethodInvoker)delegate {
-                intrebare4.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/4/0");
+                intrebare4.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/4/0");
             }); Thread.Sleep(10);
             intrebare5.Invoke((MethodInvoker)delegate {
-                intrebare5.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/5/0");
+                intrebare5.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/5/0");
             }); Thread.Sleep(10);
             intrebare6.Invoke((MethodInvoker)delegate {
-                intrebare6.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/6/0");
+                intrebare6.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/6/0");
             }); Thread.Sleep(10);
             intrebare7.Invoke((MethodInvoker)delegate {
-                intrebare7.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/7/0");
+                intrebare7.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/7/0");
             }); Thread.Sleep(10);
             intrebare8.Invoke((MethodInvoker)delegate {
-                intrebare8.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/8/0");
+                intrebare8.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/8/0");
             }); Thread.Sleep(10);
             intrebare9.Invoke((MethodInvoker)delegate {
-                intrebare9.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/9/0");
+                intrebare9.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/9/0");
             }); Thread.Sleep(10);
             intrebare10.Invoke((MethodInvoker)delegate {
-                intrebare10.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/10/0");
+                intrebare10.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/10/0");
             }); Thread.Sleep(10);
 
 
             checkBox1.Invoke((MethodInvoker)delegate {
-                checkBox1.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/1/1/");
+                checkBox1.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/1/1/");
             }); Thread.Sleep(10);
             checkBox2.Invoke((MethodInvoker)delegate {
-                checkBox2.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/1/2/");
+                checkBox2.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/1/2/");
             }); Thread.Sleep(10);
             checkBox3.Invoke((MethodInvoker)delegate {
-                checkBox3.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/1/3/");
+                checkBox3.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/1/3/");
             }); Thread.Sleep(10);
 
             checkBox4.Invoke((MethodInvoker)delegate {
-                checkBox4.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/2/1/");
+                checkBox4.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/2/1/");
             }); Thread.Sleep(10);
             checkBox5.Invoke((MethodInvoker)delegate {
-                checkBox5.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/2/2/");
+                checkBox5.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/2/2/");
             }); Thread.Sleep(10);
             checkBox6.Invoke((MethodInvoker)delegate {
-                checkBox6.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/2/3/");
+                checkBox6.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/2/3/");
             }); Thread.Sleep(10);
             checkBox7.Invoke((MethodInvoker)delegate {
-                checkBox7.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/3/1/");
+                checkBox7.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/3/1/");
             }); Thread.Sleep(10);
             checkBox8.Invoke((MethodInvoker)delegate {
-                checkBox8.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/3/2/");
+                checkBox8.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/3/2/");
             }); Thread.Sleep(10);
             checkBox9.Invoke((MethodInvoker)delegate {
-                checkBox9.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/3/3/");
+                checkBox9.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/3/3/");
             }); Thread.Sleep(10);
             checkBox10.Invoke((MethodInvoker)delegate {
-                checkBox10.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/4/1/");
+                checkBox10.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/4/1/");
             }); Thread.Sleep(10);
             checkBox11.Invoke((MethodInvoker)delegate {
-                checkBox11.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/4/2/");
+                checkBox11.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/4/2/");
             }); Thread.Sleep(10);
             checkBox12.Invoke((MethodInvoker)delegate {
-                checkBox12.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/4/3/");
+                checkBox12.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/4/3/");
             }); Thread.Sleep(10);
             checkBox13.Invoke((MethodInvoker)delegate {
-                checkBox13.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/5/1/");
+                checkBox13.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/5/1/");
             }); Thread.Sleep(10);
             checkBox14.Invoke((MethodInvoker)delegate {
-                checkBox14.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/5/2/");
+                checkBox14.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/5/2/");
             }); Thread.Sleep(10);
             checkBox15.Invoke((MethodInvoker)delegate {
-                checkBox15.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/5/3/");
+                checkBox15.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/5/3/");
             }); Thread.Sleep(10);
             checkBox16.Invoke((MethodInvoker)delegate {
-                checkBox16.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/6/1/");
+                checkBox16.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/6/1/");
             }); Thread.Sleep(10);
             checkBox17.Invoke((MethodInvoker)delegate {
-                checkBox17.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/6/2/");
+                checkBox17.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/6/2/");
             }); Thread.Sleep(10);
             checkBox18.Invoke((MethodInvoker)delegate {
-                checkBox18.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/6/3/");
+                checkBox18.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/6/3/");
             }); Thread.Sleep(10);
             checkBox19.Invoke((MethodInvoker)delegate {
-                checkBox19.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/7/1/");
+                checkBox19.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/7/1/");
             }); Thread.Sleep(10);
             checkBox20.Invoke((MethodInvoker)delegate {
-                checkBox20.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/7/2/");
+                checkBox20.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/7/2/");
             }); Thread.Sleep(10);
             checkBox21.Invoke((MethodInvoker)delegate {
-                checkBox21.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/7/3/");
+                checkBox21.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/7/3/");
             }); Thread.Sleep(10);
             checkBox22.Invoke((MethodInvoker)delegate {
-                checkBox22.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/8/1/");
+                checkBox22.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/8/1/");
             }); Thread.Sleep(10);
             checkBox23.Invoke((MethodInvoker)delegate {
-                checkBox23.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/8/2/");
+                checkBox23.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/8/2/");
             }); Thread.Sleep(10);
             checkBox24.Invoke((MethodInvoker)delegate {
-                checkBox24.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/8/3/");
+                checkBox24.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/8/3/");
             }); Thread.Sleep(10);
             checkBox25.Invoke((MethodInvoker)delegate {
-                checkBox25.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/9/1/");
+                checkBox25.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/9/1/");
             }); Thread.Sleep(10);
             checkBox26.Invoke((MethodInvoker)delegate {
-                checkBox26.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/9/2/");
+                checkBox26.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/9/2/");
             }); Thread.Sleep(10);
             checkBox27.Invoke((MethodInvoker)delegate {
-                checkBox27.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/9/3/");
+                checkBox27.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/9/3/");
             }); Thread.Sleep(10);
             checkBox28.Invoke((MethodInvoker)delegate {
-                checkBox28.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/10/1/");
+                checkBox28.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/10/1/");
             }); Thread.Sleep(100);
             checkBox29.Invoke((MethodInvoker)delegate {
-                checkBox29.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/10/2/");
+                checkBox29.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/10/2/");
             }); Thread.Sleep(10);
             checkBox30.Invoke((MethodInvoker)delegate {
-                checkBox30.Text = DownloadString("http://optimised.biz/quiz/" + Parola + "/" + Username + "/10/3/");
+                checkBox30.Text = DownloadString("http://pi.optimised.biz/quiz/" + Parola + "/" + Username + "/10/3/");
             }); Thread.Sleep(10);
             this.Refresh();
         }
@@ -909,7 +811,7 @@ namespace Istoria_matematicii
 
         private void timer2_Tick(object sender, EventArgs e)
         {
-            var result = JsonConvert.DeserializeObject<List<JsonResult>>(DownloadString("http://optimised.biz/clasament"));
+            var result = JsonConvert.DeserializeObject<List<JsonResult>>(DownloadString("http://pi.optimised.biz/clasament"));
             dataGridView1.DataSource = result;
             int nr = 0;
             foreach (DataGridViewRow row in dataGridView1.Rows)
@@ -934,7 +836,7 @@ namespace Istoria_matematicii
         {
             if(textBox5.Text!=string.Empty)
             {
-                var rez = DownloadString("http://optimised.biz/pi/" + textBox5.Text);
+                var rez = DownloadString("http://pi.optimised.biz/pi/" + textBox5.Text);
                 if (rez.ToString() == "Nu am gasit")
                 {
                     MessageBox.Show("Numarul " + textBox5.Text + " nu a fost gasit in primul milion de zecimale.");
@@ -986,7 +888,7 @@ namespace Istoria_matematicii
             try
             {
                 textBox7.Invoke((MethodInvoker)delegate {
-                    textBox7.Text = DownloadString("http://optimised.biz/pil/" + textBox6.Text);
+                    textBox7.Text = DownloadString("http://pi.optimised.biz/pil/" + textBox6.Text);
                 });
             }
             catch (Exception)
@@ -994,6 +896,108 @@ namespace Istoria_matematicii
 
                 throw;
             }
+        }
+
+        private void backgroundWorker3_DoWork(object sender, DoWorkEventArgs e)
+        {
+            iTalk_HeaderLabel21.Text =
+              "■ Prima contribuție europeană majoră de după Arhimede a fost cea a " + Environment.NewLine +
+              " matematicianului german Ludolph van Ceulen (1540–1610), care a " + Environment.NewLine +
+              " folosit o metodă geometrică de calcul a 35 de zecimale ale lui π. El a" + Environment.NewLine +
+              " fost atât de mândru de calculul său, căruia i-a dedicat o mare parte" + Environment.NewLine +
+              " din viața sa, încât a cerut ca cifrele să-i fie gravate pe piatra de mormânt.";
+            iTalk_HeaderLabel22.Text = "În aceeași perioadă, în Europa au început să apară metodele " + Environment.NewLine +
+                "analizei matematice și pentru determinarea seriilor și produselor" + Environment.NewLine +
+                " infinite pentru cantități geometrice. Prima astfel de reprezentare a" + Environment.NewLine +
+                " fost formula lui Viète";
+            iTalk_HeaderLabel25.Text = "■ Descoperit de John Wallis în 1655. Isaac Newton a calculat și el o serie pentru π și a" + Environment.NewLine +
+                " calculat 15 cifre, deși ulterior a mărturisit: „Mi-e rușine să vă spun la câte cifre am " + Environment.NewLine +
+                "ajuns cu calculele, neavând altceva de făcut atunci.”";
+            iTalk_HeaderLabel28.Text = "■ Apariția calculatoarelor numerice în secolul al XX-lea au dus la o creștere a recordurilor de" + Environment.NewLine +
+                " calcul al lui π. John von Neumann a folosit ENIAC pentru a calcula 2037 de cifre ale lui π în" + Environment.NewLine +
+                " 1949, un calcul care a durat 70 de ore.Alte mii de zecimale s-au obținut în următoarele decenii" + Environment.NewLine +
+                " și milionul de cifre a fost depășit în 1973. Progresele nu s-au datorat doar hardware-ului mai" + Environment.NewLine +
+                " rapid, ci și apariției unor noi algoritmi. Una dintre cele mai semnificative realizări a fost" + Environment.NewLine +
+                " descoperirea transformatei Fourier rapide (FFT) în anii 1960, algoritm ce permite" + Environment.NewLine +
+                " calculatoarelor să efectueze rapid operațiuni aritmetice pe numere extrem de mari.";
+            iTalk_HeaderLabel30.Text = " ■ 1900-1650 i.Hr. Egiptenii si babilonienii au estimat pi ca fiind 3,1605, respectiv 3,125." + Environment.NewLine +
+                " ■ 287 i.Hr. S-a nascut matematicianul Arhimede din Siracuza. El a descoperit " + Environment.NewLine +
+                " legatura dintre aria cercului si circumferinta sa." + Environment.NewLine +
+                " ■ 429 S-a nascut astronomul si matematicianul chinez Zu Chongzhi. El l-a estimat pe " + Environment.NewLine +
+                " pi ca fiind 355/113,ceea ce ramane cea mai buna aproximare pentru urmatorii 1.000 " + Environment.NewLine +
+                " de ani. " + Environment.NewLine +
+                " ■ 1579 Francezul François Viete il calculeaza pe pi pana la a noua zecimala." + Environment.NewLine +
+                " ■ 1610 Ludolph van Ceulen, din Germania, calculeaza pi pana la a 35-a zecimala. " + Environment.NewLine +
+                " Moare in acelasi an si are valoarea lui pi gravata pe piatra sa de mormant." + Environment.NewLine +
+                " ■ 1706 Simbolul lui pi (π) este folosit pentru prima data de matematicianul galez " + Environment.NewLine +
+                " William Jones, pentru a reprezenta raportul dintre circumferinta unui cerc si " + Environment.NewLine +
+                " diametrul sau. " + Environment.NewLine +
+                " ■ 1761 Matematicianul germano-elvetian, Johann Heinrich Lambert, aduce prima " + Environment.NewLine +
+                " dovada stiintifica potrivit careia pi e numar irational." + Environment.NewLine +
+                " ■ 1794 Francezul Adrien-Marie Legendre dovedeste ca π2 e si el irational.";
+            iTalk_HeaderLabel31.Text = " ■ 1897 Fizicianul american Edward Johnston Goodwin incearca sa estimeze " + Environment.NewLine +
+                "cu precizie valoarea lui pi si sa o inregistreze, astfel incat sa-i fie platite " + Environment.NewLine +
+                "drepturi de autor. Ideea esueaza dupa ce opinia publica se revolta." + Environment.NewLine +
+                " ■ 1937 Tavanul Salii 31 a Palatului Découverte din Paris este decorat cu " + Environment.NewLine +
+                "zecimalele lui pi.A 528 - a zecimala este gresita si va fi corectata in 1949." + Environment.NewLine +
+                " ■1988 Se celebreaza, pentru prima data, Ziua Pi, pe 14 martie, in San " + Environment.NewLine +
+                "Francisco." + Environment.NewLine +
+                " ■ 2005 Studentul chinez Chao Lu il recita pe pi din memorie pana la" + Environment.NewLine +
+                "a 67.890 - a zecimala, stabilind un nou record mondial." + Environment.NewLine +
+                " ■ 2009 Congresul SUA recunoaste, in mod oficial, Ziua Nationala Pi,14" + Environment.NewLine +
+                "martie.";
+            iTalk_HeaderLabel33.Text = " – Pi este aproximat ca fractia 22/7." + Environment.NewLine +
+                " – Matematicianul britanic William Shanks (1812-1882) a aflat, in 15 ani, 707" + Environment.NewLine +
+                " zecimale ale lui pi. El a facut o eroare la zecimala 528, eroare care a fost detectata" + Environment.NewLine +
+                " abia in 1945." + Environment.NewLine +
+                " Chiar cu mult timp înainte ca valoarea lui π să fie evaluată de calculatoarele" + Environment.NewLine +
+                " electronice, memorarea unui număr record de cifre a devenit o obsesie a" + Environment.NewLine +
+                " unor oameni. În 2006, Akira Haraguchi, un inginer japonez pensionar, s-a" + Environment.NewLine +
+                " lăudat cu reținerea a 100.000 de zecimale exacte. ";
+            iTalk_HeaderLabel34.Text = " Aceasta nu a fost însă verificată de Guinness World Records." + Environment.NewLine +
+                " Recordul înregistrat de Guinness la memorarea cifrelor lui π este" + Environment.NewLine +
+                " de 67.890 de cifre, deținut de Lu Chao, un student de 24 de ani" + Environment.NewLine +
+                " din China.I-a luat 24 de ore și 4 minute să recite fără greșeală" + Environment.NewLine +
+                " până la a 67.890-a cifră zecimală a lui π.";
+            iTalk_HeaderLabel35.Text = " – De 90 de zile au avut nevoie Shigeru Kondo, un inginer de sistem din " + Environment.NewLine +
+                " Japonia, si Alexander Yee, un student la informatica din SUA, pentru" + Environment.NewLine +
+                " a  scrie, in 2010, 5.000 de miliarde de zecimale ale lui pi" + Environment.NewLine +
+                " pe ecranul unui singur computer." + Environment.NewLine +
+                " – In primul milion al zecimalelor lui pi, numarul 5 apare cel mai des," + Environment.NewLine +
+                " 100.359 de aparitii." + Environment.NewLine +
+                " – Cei care memoreaza numarul pi adauga, zilnic, 10 sau 15 zecimale in" + Environment.NewLine +
+                " memoria lor. Englezul Daniel Tammet a estimat ca i-au trebuit 14 zile" + Environment.NewLine +
+                " pentru a memora primele 22.514 zecimale ale lui pi. Le-a recitat la" + Environment.NewLine +
+                " Universitatea Oxford, pe 14 martie 2004. ";
+            iTalk_HeaderLabel36.Text = " ■ Există mai multe moduri de memorare a lui π, printre care și utilizarea de" + Environment.NewLine +
+                " „pieme”, poezii care reprezintă numărul π astfel încât lungimea fiecărui" + Environment.NewLine +
+                " cuvânt (în litere) reprezintă o cifră. Un astfel de exemplu de piemă, compus" + Environment.NewLine +
+                " de Sir James Jeans: How I need (sau: want) a drink, alcoholic in nature" + Environment.NewLine +
+                " (sau: of course), after the heavy lectures (sau: chapters) involving quantum" + Environment.NewLine +
+                " mechanics.Primul cuvânt are 3 litere, al doilea are una, al treilea are 4, al" + Environment.NewLine +
+                " patrulea 1, al cincilea 5, și așa mai departe. Echivalent, în limba română" + Environment.NewLine +
+                " există fraza: „Așa e bine a scrie renumitul și utilul număr”.Cadaeic Cadenza" + Environment.NewLine +
+                " conține în acest fel primele 3834 de cifre ale lui π.Piemele fac parte din" + Environment.NewLine +
+                " întregul domeniu de studiu al mnemotehnicilor pentru reținerea cifrelor lui π.";
+            iTalk_HeaderLabel37.Text = " ■ Poezia lui pi „Piemele“ sunt poeme inspirate de pi, in care lungimea fiecarui cuvant" + Environment.NewLine +
+                " (in litere) reprezinta o zecimala a lui pi. De exemplu: „Asa e bine a scrie renumitul si utilul" + Environment.NewLine +
+                " numar“. Versurile reprezinta numarul 3.14159265. Piemele au fost create pentru a" + Environment.NewLine +
+                " ajuta oamenii sa retina zecimalele lui pi. Acum exista chiar carti de pieme cu" + Environment.NewLine +
+                " 10.000 de cuvinte. Pingleza, o varianta a limbii engleze, urmeaza aceeasi regula in" + Environment.NewLine +
+                " povestiri scurte, puzzle-uri si piese de teatru. ";
+            iTalk_HeaderLabel38.Text = " In limba romana performanata de a creea un poem" + Environment.NewLine +
+                " pentru a putea memora zecimalele numarului pi" + Environment.NewLine +
+                " este de 25 de zecimale, data de urmatoarea" + Environment.NewLine +
+                " poezie: ";
+            iTalk_HeaderLabel39.Text = "“Dar o stim e numar important ce trebuie iubit" + Environment.NewLine +
+                "" + Environment.NewLine +
+                "Din toate numerele insemnate diamant" + Environment.NewLine +
+                "" + Environment.NewLine +
+                "neasemuit" + Environment.NewLine +
+                "" + Environment.NewLine +
+                "Cei ce vor temeinic asta pretui" + Environment.NewLine +
+                "" + Environment.NewLine +
+                "Ei vesnic bine vor trai!“";
         }
 
         private void iTalk_Button_24_Click(object sender, EventArgs e)

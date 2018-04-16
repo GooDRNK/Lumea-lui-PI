@@ -51,7 +51,7 @@ namespace Istoria_matematicii
                 {
                     //Face request la API, pentru a inregistra contul, daca se poate, daca nu se poate se primeste un mesaj: "Numele de utilizator deja exista" / "Acest mail este deja utilizat.".
                    
-                    MessageBox.Show(DownloadString("http://optimised.biz/registers/" + iTalk_TextBox_Small4.Text + "/" + iTalk_TextBox_Small1.Text + "/" + iTalk_TextBox_Small2.Text)) ;
+                    MessageBox.Show(DownloadString("http://pi.optimised.biz/registers/" + iTalk_TextBox_Small4.Text + "/" + iTalk_TextBox_Small1.Text + "/" + iTalk_TextBox_Small2.Text)) ;
                 }
                 else
                 {
@@ -73,7 +73,7 @@ namespace Istoria_matematicii
                && User.Text != string.Empty   )
             {
                 //Face request la api sa afle daca datele introduse sunt corecte.
-                if (DownloadString("http://optimised.biz/pilogin/" + Password.Text + "/" + User.Text) == "Succes")
+                if (DownloadString("http://pi.optimised.biz/pilogin/" + Password.Text + "/" + User.Text) == "Succes")
                 {
                     this.Hide();
                     Parola_Login = Password.Text;
@@ -83,7 +83,7 @@ namespace Istoria_matematicii
                 }
                 else
                 {
-                    MessageBox.Show(DownloadString("http://optimised.biz/pilogin/" + Password.Text + "/" + User.Text));
+                    MessageBox.Show(DownloadString("http://pi.optimised.biz/pilogin/" + Password.Text + "/" + User.Text));
                 }
 
             }

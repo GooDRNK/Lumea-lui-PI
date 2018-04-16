@@ -169,6 +169,7 @@
             this.intrebare1 = new iTalk.iTalk_HeaderLabel();
             this.tabPage14 = new System.Windows.Forms.TabPage();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Col = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage13 = new System.Windows.Forms.TabPage();
             this.iTalk_Separator5 = new iTalk.iTalk_Separator();
             this.iTalk_Separator4 = new iTalk.iTalk_Separator();
@@ -187,7 +188,7 @@
             this.iTalk_ControlBox1 = new iTalk.iTalk_ControlBox();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
-            this.Col = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.backgroundWorker3 = new System.ComponentModel.BackgroundWorker();
             this.iTalk_ThemeContainer1.SuspendLayout();
             this.iTalk_TabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -1927,6 +1928,12 @@
             this.dataGridView1.Size = new System.Drawing.Size(345, 661);
             this.dataGridView1.TabIndex = 0;
             // 
+            // Col
+            // 
+            this.Col.HeaderText = "Nr.";
+            this.Col.Name = "Col";
+            this.Col.ReadOnly = true;
+            // 
             // tabPage13
             // 
             this.tabPage13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
@@ -2119,11 +2126,9 @@
             // 
             this.backgroundWorker2.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker2_DoWork);
             // 
-            // Col
+            // backgroundWorker3
             // 
-            this.Col.HeaderText = "Nr.";
-            this.Col.Name = "Col";
-            this.Col.ReadOnly = true;
+            this.backgroundWorker3.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker3_DoWork);
             // 
             // PI
             // 
@@ -2354,6 +2359,7 @@
         private System.Windows.Forms.TextBox textBox7;
         private System.ComponentModel.BackgroundWorker backgroundWorker2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Col;
+        private System.ComponentModel.BackgroundWorker backgroundWorker3;
     }
 }
 
